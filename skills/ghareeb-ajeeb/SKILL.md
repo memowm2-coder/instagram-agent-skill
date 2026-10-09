@@ -39,7 +39,7 @@ that you haven't checked.
 | --- | --- | --- |
 | 1 Research | Score the topic (Greenlight ≥ 22/30, nothing < 3). Find leads, then go to the primary or T1/T2 source for each | A person, a turn, a local angle |
 | 2 Fact verification | Fill the Claim Ledger. Grade every claim | 2 independent sources, one T1/T2; no غير مؤكد claim survives |
-| 3 Story | Write the 7-beat spine | Majlis Test on paper; the reveal is visual |
+| 3 Story | Write the 9-beat spine | Majlis Test on paper; the reveal is visual |
 | 4 Script | Three hooks of different types (Bible §10), choose with reasons, then the VO in Emirati dialect + separate on-screen text | Every factual line has a Claim ID |
 | 5–7 | Storyboard, beat breakdown, scene breakdown | Templates' checks |
 | 8–10 | Motion plan, collage plan, asset list | Only T1–T5, the Red Rule, rights status for every asset |

@@ -33,7 +33,7 @@ Naming: `{file number 3 digits}-{one english slug word}`.
 | -: | --- | --- | --- | --- | --- | --- |
 | 1 | **Research** | Researcher | Greenlit question | `01-research.md` sections A–D | ≥ 8 leads pulled to source; the story has a person, a turn, a local angle | 4–5 h |
 | 2 | **Fact Verification** | Fact-checker (≠ writer) | Research brief | Claim Ledger complete | Every claim has 2 sources (one T1/T2) and a grade; no "غير مؤكد" claim survives | 1.5–2 h |
-| 3 | **Story Development** | Showrunner (Maryam) + writer | Verified ledger | The 7-beat **story spine** (one line per beat) | Passes the Majlis Test on paper; the reveal is *visual* | 1 h |
+| 3 | **Story Development** | Showrunner (Maryam) + writer | Verified ledger | The 9-beat **story spine** (one line per beat) | Passes the Majlis Test on paper; the reveal is *visual* | 1 h |
 | 4 | **Script** | Writer, voiced by Maryam | Story spine | `02-script.md`: VO + on-screen text, three scored hooks | Read aloud by Maryam at speed; within target length; every line in the ledger | 2 h |
 | 5 | **Storyboard** | Director / designer | Script | `03-storyboard.md`: one frame per beat | Every beat has a picture; layout codes L1–L7 assigned; the Cut is drawn | 2 h |
 | 6 | **Beat Breakdown** | Editor | Script + storyboard | Timed beat table in `02-script.md` | No beat over 4 s without a visual change; answer after 60% | 30 min |

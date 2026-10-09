@@ -141,7 +141,7 @@ stamp, "غريب… عجيب." Episode 1 then arrives already feeling like a sho
 | -: | --- | --- | --- |
 | 1 | Keep the name غريب عجيب | Keep | ☐ |
 | 2 | The architect's visual language (Paper & Ruler) as the core look | Yes | ☐ |
-| 3 | The 7-beat ملف formula and 60–90 s standard runtime | Yes | ☐ |
+| 3 | The 9-beat ملف formula and 60–90 s standard runtime | Yes | ☐ |
 | 4 | The Red Rule (red = truth only) | Yes | ☐ |
 | 5 | Sponsorship rules (challenge 4) | Yes | ☐ |
 | 6 | Stay on @mrymmh_, revisit at file 16 | Yes | ☐ |
