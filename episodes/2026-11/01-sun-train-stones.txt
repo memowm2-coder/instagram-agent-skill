@@ -1,0 +1,28 @@
+show: gharib
+# غريب عجيب · ep. 01 · Sun 1 Nov 2026 · ليش السكة مليانة حصى؟
+
+[INTERRUPT]  (Black. Paper-rip. One grey stone drops onto paper with a hard click. Pull out: thousands of stones under a rail.)
+مريم: كل سكة قطار في العالم... تحتها حصى.
+[QUESTION]
+مريم: ليش؟ قطار بهالحجم... واقف على حصى؟
+[MYSTERY]  (Two cutout "theories" taped up, each crossed out in red)
+مريم: قالوا للزينة. قالوا رخيص وخلاص.
+مريم: ولا وحدة صح.
+[STORY]  (Blueprint cross-section: rail, sleeper, ground. A wheel stamps down, frame by frame.)
+مريم: كل عجلة تمر... تدق السكة بقوة.
+مريم: لو السكة على تراب، التراب ينضغط... والسكة تنزل شوي شوي.
+مريم: ولو جا مطر... التراب يصير طين.
+[REVEAL]
+مريم: الحصى يشيل الثقل... ويوزعه على الأرض كلها.
+[EXPLAIN]  (Archive label, typewriter: "BALLAST · railway engineering". Close-up: sharp stones locking like a puzzle.)
+مريم: الحصى مب مدور. حاد. عشان يتشابك مثل البزل وما يتحرك.
+مريم: والفراغات بينه؟ عشان المي تنزل وما توقف.
+[TWIST]  (Paper-tear to desert. Sand blows across the collage, fills the gaps between the stones.)
+مريم: بس هني عندنا عدو ما يعرفونه في أوروبا.
+مريم: الرمل. يدخل بين الحصى... ويسكر الفراغات.
+مريم: فقطار الاتحاد عنده مكاين تشيل الرمل عن السكة... مثل ما هم يشيلون الثلج.
+[END]  (Back to the single stone from frame 1. Maryam's cutout picks it up.)
+مريم: المرة الجاية لين تركب القطار... ناظر تحت.
+(Stamp: غريب عجيب)
+
+source: Ballast functions (load spreading, interlocking angular stone, drainage): Futura Sciences explainer + railway engineering references; sand cleared "much like ... snow", at least weekly on parts of the line: Etihad Rail DB executive, International Railway Journal; sand remover in Etihad Rail maintenance tender: MEED; ballast sand contamination below 3%: Saipem (checked 2026-10-09)
