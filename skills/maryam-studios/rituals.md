@@ -32,7 +32,7 @@ Moon-sighted dates move about 11 days earlier each year; confirm them.
 - **Eid al-Adha** and the Hajj season.
 - **Summer** (Jun-Aug): travel, heat, kids at home, airports.
 - **Back to school** (late Aug): students, parents, fees, school transport.
-- **GITEX Global** (October, Dubai): technology, AI.
+- **GITEX Global** (7-11 Dec 2026, Expo City Dubai; it moved from October): technology, AI.
 - **Dubai Fitness Challenge** (Oct-Nov): مريم هاكس gym gags.
 - **Commemoration Day** (30 Nov) and **Eid Al Etihad / National Day** (2 Dec):
   UAE history, places, people. Treat with respect; no gags.
