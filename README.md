@@ -17,6 +17,25 @@ see it.
 
 **Nothing gets posted until you say yes.** These skills write. You post.
 
+## This fork: Maryam Studios
+
+This copy of the pack also runs **Maryam Studios**, the Arabic short-form
+media brand around Digital Show Host Maryam AlMajd in the UAE. One house skill,
+`/maryam-studios`, acts as the studio's Executive Creative Director: three
+shows and nothing else (غريب عجيب, مريم هاكس, بكل بساطة), a fixed visual
+signature, thumbnails that start from Maryam's assets, the monthly plan and
+the Sunday meeting.
+
+```bash
+cp -r skills/maryam-studios ~/.claude/skills/
+cp templates/maryam/voice.md ~/.claude/instagram/voice.md   # then fill the {{...}}
+python3 ~/.claude/skills/maryam-studios/qc.py script.txt --show hacks
+```
+
+`qc.py` fails a مريم هاكس script whose fixed lines were changed, a
+غريب عجيب or بكل بساطة script with no source or an open `{{تحقق}}`, beats out
+of order, a greeting opener, and stock creator or press-release phrases.
+
 ## Install
 
 Paste this into Claude:
