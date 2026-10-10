@@ -1,0 +1,151 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Bold.ttf);font-weight:700}
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Regular.ttf);font-weight:400}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#1d2b40}
+.abs{position:absolute}
+#cam{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:760px 560px}
+.paperedge{filter:drop-shadow(5px 0 0 #F6F0E3) drop-shadow(-5px 0 0 #F6F0E3) drop-shadow(0 5px 0 #F6F0E3) drop-shadow(0 -5px 0 #F6F0E3) drop-shadow(-12px 16px 12px rgba(10,14,22,.55))}
+.txt{font-family:Plex;direction:rtl;color:#1C1B19}
+</style></head><body>
+<div id="cam"><div id="world" style="position:absolute;left:0;top:0;width:1920px;height:1080px;transform:translateX(140px)">
+ <svg class="abs" width="2400" height="1300" style="left:-300px;top:-110px"><defs>
+  <pattern id="twill" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)"><rect width="7" height="7" fill="#2b4466"/><rect width="7" height="2.6" fill="#3d5b84"/><rect y="4" width="7" height="1" fill="#22385a"/></pattern>
+  <filter id="noise" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.05" numOctaves="3" seed="4"/><feColorMatrix values="0 0 0 0 .9  0 0 0 0 .92  0 0 0 0 1  0 0 0 .55 -.18"/></filter>
+  <filter id="fine"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .25 0"/></filter>
+  <radialGradient id="rivet" cx=".38" cy=".35" r=".7"><stop offset="0" stop-color="#f1c79a"/><stop offset=".45" stop-color="#b8713d"/><stop offset="1" stop-color="#5a3015"/></radialGradient>
+  <linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+ </defs>
+  <rect width="2400" height="1300" fill="url(#twill)"/>
+  <rect width="2400" height="1300" filter="url(#noise)"/>
+  <rect width="2400" height="1300" filter="url(#fine)" opacity=".5"/>
+  <rect width="2400" height="1300" fill="url(#shade)"/>
+  <g transform="translate(300,110)"><!-- waistband -->
+  <rect x="-460" y="110" width="2800" height="150" fill="url(#twill)"/><rect x="-460" y="110" width="2800" height="150" fill="#fff" opacity=".05"/>
+  <rect x="-460" y="250" width="2800" height="14" fill="#000" opacity=".28"/>
+  <g stroke="#D9963C" stroke-width="4" stroke-dasharray="14 9" fill="none"><line x1="-460" y1="132" x2="2340" y2="132"/><line x1="-460" y1="238" x2="2340" y2="238"/></g>
+  <!-- front pocket curve seam -->
+  <path d="M1250 264 C1230 560 1120 820 820 1100" stroke="#000" stroke-opacity=".35" stroke-width="16" fill="none"/>
+  <path d="M1272 264 C1252 560 1142 830 842 1100" stroke="#D9963C" stroke-width="4" stroke-dasharray="14 9" fill="none"/>
+  <path d="M1296 264 C1276 570 1166 840 866 1100" stroke="#D9963C" stroke-width="4" stroke-dasharray="14 9" fill="none"/></g>
+ </svg>
+ <!-- Maryam scene1 (behind pocket front) -->
+ <div id="mclip" class="abs" style="left:0;top:0;width:1920px;height:585px;overflow:hidden">
+  <img id="m1" class="abs paperedge" src="maryam_cutout.png" style="width:540px;left:490px;top:560px">
+ </div>
+ <!-- pocket front patch -->
+ <svg id="pocket" class="abs" width="1920" height="1080" style="left:0;top:0">
+  <path d="M500 560 L1020 560 L1028 880 Q760 935 492 880 Z" fill="url(#twill)"/>
+  <path d="M500 560 L1020 560 L1028 880 Q760 935 492 880 Z" fill="#fff" opacity=".06"/>
+  <path d="M500 560 L1020 560 L1028 880 Q760 935 492 880 Z" fill="none" stroke="#000" stroke-opacity=".45" stroke-width="8"/>
+  <rect x="500" y="560" width="520" height="44" fill="#fff" opacity=".07"/><rect x="500" y="600" width="520" height="6" fill="#000" opacity=".3"/>
+  <g stroke="#D9963C" stroke-width="4" stroke-dasharray="13 8" fill="none"><line x1="510" y1="574" x2="1010" y2="574"/><line x1="510" y1="592" x2="1010" y2="592"/><path d="M518 610 L524 862 Q760 910 996 862 L1002 610"/></g>
+  <circle cx="516" cy="584" r="17" fill="url(#rivet)"/><circle cx="1004" cy="584" r="17" fill="url(#rivet)"/>
+ </svg>
+ <!-- annotations -->
+ <svg id="dim" class="abs" width="1920" height="1080" style="left:0;top:0">
+  <g id="dimg" stroke="#F6F0E3" stroke-width="3" fill="none" stroke-linecap="round">
+   <line id="dl" x1="500" y1="958" x2="1020" y2="958"/><line x1="500" y1="940" x2="500" y2="976"/><line x1="1020" y1="940" x2="1020" y2="976"/>
+  </g>
+ </svg>
+ <div id="dimlbl" class="abs txt" style="left:640px;top:972px;width:240px;text-align:center;font-weight:500;font-size:30px;color:#F6F0E3">فتحة الجيب</div>
+ <!-- Scene 2 elements -->
+ <img id="m2" class="abs paperedge" src="maryam_cutout.png" style="width:470px;left:1160px;top:420px;display:none">
+ <svg id="phone" class="abs" width="620" height="1080" viewBox="0 0 620 1080" style="left:450px;top:0px;display:none;filter:drop-shadow(-14px 20px 14px rgba(0,0,0,.5))">
+  <rect x="10" y="10" width="600" height="1060" rx="78" fill="#2A2826" stroke="#F6F0E3" stroke-width="10"/>
+  <rect x="40" y="40" width="540" height="1000" rx="56" fill="#15171c"/>
+  <path d="M40 300 L580 100 L580 240 L40 440Z" fill="#fff" opacity=".06"/>
+  <rect x="250" y="62" width="120" height="30" rx="15" fill="#2A2826"/>
+ </svg>
+ <svg id="dim2" class="abs" width="1920" height="1080" style="left:0;top:0;display:none">
+  <g stroke="#F6F0E3" stroke-width="3" fill="none"><line x1="460" y1="1000" x2="1060" y2="1000"/><line x1="460" y1="984" x2="460" y2="1016"/><line x1="1060" y1="984" x2="1060" y2="1016"/></g>
+ </svg>
+ <div id="dim2lbl" class="abs txt" style="display:none;left:560px;top:1012px;width:400px;text-align:center;font-weight:500;font-size:28px;color:#F6F0E3">الجوال أعرض من فتحة الجيب</div>
+ <svg id="xstamp" class="abs" width="420" height="420" viewBox="0 0 420 420" style="left:550px;top:520px;display:none">
+  <defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency=".09" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="14"/></filter>
+  <mask id="inkm"><rect width="420" height="420" fill="#fff"/><rect width="420" height="420" filter="url(#fine)" fill="#000" opacity=".9"/></mask></defs>
+  <g filter="url(#ink)" mask="url(#inkm)" stroke="#D2342B" stroke-width="58" stroke-linecap="round"><line x1="80" y1="80" x2="340" y2="340"/><line x1="340" y1="80" x2="80" y2="340"/></g>
+ </svg>
+</div>
+</div><!-- screen-space layers (not affected by camera) -->
+<div id="head" class="abs" style="right:90px;top:110px;width:680px;height:260px">
+ <svg class="abs" width="680" height="260" style="filter:drop-shadow(-10px 14px 10px rgba(0,0,0,.45))"><polygon id="headpoly" fill="#F6F0E3"/></svg>
+ <div class="abs txt" style="inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:70px;line-height:1.25;text-align:center">ليش الجينز فيه<br>جيب صغير؟</div>
+</div>
+<div id="cap2" class="abs" style="right:90px;top:120px;width:640px;height:150px;display:none">
+ <svg class="abs" width="640" height="150" style="filter:drop-shadow(-10px 14px 10px rgba(0,0,0,.45))"><polygon id="cappoly" fill="#F6F0E3"/></svg>
+ <div class="abs txt" style="inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:58px">حتى الجوال… ما يدخل!</div>
+</div>
+<div id="tb" class="abs txt" style="left:96px;top:880px;width:520px;background:#F6F0E3;border:3px solid #1C1B19;font-size:24px;box-shadow:-8px 10px 10px rgba(0,0,0,.35)">
+ <div style="display:flex;border-bottom:2px solid #1C1B19;font-weight:700"><div style="flex:1;padding:8px 14px">غريب عجيب</div><div style="padding:8px 14px;border-right:2px solid #1C1B19">ملف ٠٠١</div></div>
+ <div style="padding:6px 14px;border-bottom:1px solid #1C1B19">الحلقة: الجيب الصغير في الجينز</div>
+ <div style="padding:6px 14px">المصدر: —</div>
+</div>
+<svg id="tear" class="abs" width="2600" height="1080" style="left:2000px;top:0;filter:drop-shadow(-16px 0 14px rgba(0,0,0,.45))"><polygon id="tearpoly" fill="#C9A77A"/><rect id="tearg" width="2600" height="1080" filter="url(#fine)" opacity=".6"/></svg>
+<script>
+const $=id=>document.getElementById(id);
+let s=11;const R=()=>{s=(s*16807)%2147483647;return s/2147483647};
+function torn(w,h,j){const p=[];const n=Math.round(w/16),m=Math.round(h/16);for(let i=0;i<=n;i++)p.push([i*w/n,R()*j]);for(let i=1;i<=m;i++)p.push([w-R()*j,i*h/m]);for(let i=n-1;i>=0;i--)p.push([i*w/n,h-R()*j]);for(let i=m-1;i>0;i--)p.push([R()*j,i*h/m]);return p.map(q=>q.join(',')).join(' ')}
+$('headpoly').setAttribute('points',torn(680,260,18));$('cappoly').setAttribute('points',torn(640,150,14));
+(()=>{const p=[];for(let y=0;y<=1080;y+=18)p.push([R()*70,y]);p.push([2600,1080],[2600,0]);$('tearpoly').setAttribute('points',p.map(q=>q.join(',')).join(' '))})();
+const hash=(a,b)=>{let x=Math.sin(a*127.1+b*311.7)*43758.5453;return x-Math.floor(x)};
+const boil=(f,id,amp=1.6,rot=.7)=>{const k=Math.floor(f/4);return [ (hash(k,id)-.5)*2*amp,(hash(k,id+9)-.5)*2*amp,(hash(k,id+17)-.5)*2*rot]};
+const step=(f)=>f-(f%2);
+const keys=(f,ks)=>{ // stepped hold keys [[frame,val],...]
+ let v=ks[0][1];for(const [k,val] of ks) if(f>=k) v=val; return v};
+const lerp=(a,b,t)=>a+(b-a)*Math.max(0,Math.min(1,t));
+const ease=t=>t<0?0:t>1?1:1-Math.pow(1-t,3);
+function show(id,on){$(id).style.display=on?'':'none'}
+window.render=function(f){
+ const g=step(f);
+ const s2=f>=152;
+ // camera (smooth, on ones)
+ let sc,tx=0,ty=0;
+ if(!s2){sc=lerp(1.0,1.07,f/150);}
+ else{sc=lerp(1.0,1.035,(f-152)/148);tx=0;ty=0}
+ $('cam').style.transform=`translate(${tx}px,${ty}px) scale(${sc})`;
+ // scene 1
+ show('mclip',!s2);show('pocket',true);show('head',!s2);show('dim',!s2);show('dimlbl',!s2);
+ if(!s2){
+  const y=keys(g,[[0,580],[12,520],[16,450],[20,380],[24,300],[28,250],[32,238],[36,244]]);
+  const r=keys(g,[[0,0],[16,-3],[24,2],[32,-1],[36,0]]);
+  const [bx,by,br]=boil(g,1);
+  $('m1').style.transform=`translate(${bx}px,${y-560+by}px) rotate(${r+br}deg)`;
+  // headline: stepped slide in from right
+  const hx=keys(g,[[0,900],[44,620],[48,300],[52,80],[56,-14],[60,0]]);
+  const [hx2,hy2,hr]=boil(g,5,1.2,.4);
+  $('head').style.transform=`translate(${hx+hx2}px,${hy2}px) rotate(${-2+hr}deg)`;
+  // dimension line draws on (smooth) f70-100
+  const t=ease((f-70)/30);$('dl').setAttribute('x2',500+520*t);$('dimlbl').style.opacity=ease((f-95)/10);$('dimg').style.opacity=f<70?0:1;
+ }
+ // scene 2
+ show('m2',s2);show('cap2',s2&&f>=168);show('phone',s2);show('dim2',s2&&f>=196&&f<236);show('dim2lbl',s2&&f>=196&&f<236);show('xstamp',s2&&f>=258);
+ if(s2){
+  // Maryam notices: hop + lean toward phone, react on bounce
+  let my=keys(g,[[152,0],[176,-18],[180,-6],[184,0],[240,-34],[244,-10],[248,-22],[252,0]]);
+  let mr=keys(g,[[152,0],[176,-4],[184,-3],[240,6],[248,-2],[256,0]]);
+  const [bx,by,br]=boil(g,2);
+  $('m2').style.transform=`translate(${bx}px,${my+by}px) rotate(${mr+br}deg)`;
+  const cx=keys(g,[[168,700],[172,240],[176,20],[180,0]]);const [c1,c2,c3]=boil(g,6,1.2,.4);
+  $('cap2').style.transform=`translate(${cx+c1}px,${c2}px) rotate(${1.5+c3}deg)`;
+  // phone: descend (stepped), jam wobble, bounce out
+  let py,pr,px=0;
+  if(g<220){py=keys(g,[[152,-1150],[188,-1000],[192,-820],[196,-680],[200,-580],[204,-530],[208,-505],[212,-498]]);pr=keys(g,[[152,-6],[196,-3],[208,0]]);}
+  else if(g<236){py=keys(g,[[220,-478],[224,-500],[228,-482],[232,-496]]);pr=keys(g,[[220,3],[224,-3],[228,2],[232,-2]]);}
+  else{const k=[[236,[-640,-40,-10]],[240,[-820,-120,-20]],[244,[-760,-220,-28]],[248,[-620,-320,-34]],[252,[-600,-350,-36]],[256,[-610,-342,-35]]];
+   let v=k[0][1];for(const [kk,val] of k) if(g>=kk) v=val; [py,px,pr]=v;}
+  const [qx,qy,qr]=boil(g,3,1.4,.5);
+  $('phone').style.transform=`translate(${px+qx}px,${py+qy}px) rotate(${pr+qr}deg)`;
+  // X stamp: lands big then settles
+  const xs=keys(g,[[258,1.45],[260,1.1],[262,0.96],[264,1.0]]);const [sx,sy,sr]=boil(g,8,1,.5);
+  $('xstamp').style.transform=`translate(${sx}px,${sy}px) rotate(${-8+sr}deg) scale(${xs})`;
+ }
+ // title block boil
+ const [tbx,tby]=boil(g,12,.8,0);$('tb').style.transform=`translate(${tbx}px,${tby}px)`;
+ // tear wipe (stepped on twos) f140-164, right -> left
+ const tf=Math.max(0,Math.min(1,(g-140)/24));
+ $('tear').style.display=(f>=140&&f<=166)?'':'none';
+ $('tear').style.left=(1920-(1920+2700)*tf)+'px';
+};
+document.fonts.ready.then(()=>{render(0);document.body.dataset.ready=1});
+</script></body></html>
