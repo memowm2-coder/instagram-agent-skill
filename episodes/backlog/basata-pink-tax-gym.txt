@@ -1,0 +1,22 @@
+show: basata
+# بكل بساطة · نصيحة · الضريبة الوردية: ليش البنات يدفعون أكثر؟ (نسخة الإمارات)
+
+[HOOK]  (Face to camera, holding two gym membership cards: one pink, one blue)
+مريم: بنات واجد يقولون: نفس الجيم، نفس الأجهزة... بس اشتراكنا أغلى.
+مريم: فرحنا نتأكد.
+[STAKE]  (B-roll: our team calling gyms, price lists arriving on WhatsApp, gym names blurred)
+مريم: كلمنا {{عدد}} جيمات في الإمارات فيها قسم للشباب وقسم للبنات.
+مريم: {{النتيجة: كم جيم كان فيه سعر البنات أغلى، وبكم الفرق في الشهر}}.
+[STEPS]  (B-roll: a UAE supermarket shelf, same brand, pink vs blue, price tags in close-up, our own shots)
+مريم: وهذا مب بس في الجيم. له اسم: الضريبة الوردية.
+مريم: يعني تدفعين أكثر... بس لأن المنتج مكتوب عليه "للبنات".
+مريم: نفس الماركة، نفس الحجم... الوردي بـ {{سعر}} درهم، والأزرق بـ {{سعر}}.
+مريم: وفي نيويورك سووا دراسة على حوالي ثمانمية منتج... منتجات البنات طلعت أغلى بسبعة بالمية في المتوسط.
+[CATCH]  (Face to camera, blueprint callouts in majd red)
+مريم: الحل؟ قارني بسعر المل والغرام... مب بلون العلبة.
+مريم: شوفي المكونات. إذا نفسها، خذي الأرخص.
+مريم: وفي الجيم، اسألي عن سعر الشباب لنفس الاشتراك. وإذا في فرق... اسألي ليش.
+[END]
+مريم: بكل بساطة.
+
+source: NYC Department of Consumer Affairs, "From Cradle to Cane" (2015): ~800 products, 35 categories, women's versions 7% more on average (Time, Fortune); later like-for-like study found the gap smaller or reversed in many categories (Chicago Booth Review, 2022); UAE gym and shelf prices: Maryam Studios field check {{تاريخ الجولة}}
