@@ -9,6 +9,9 @@ This is the source of truth. If an episode contradicts this document, either
 the episode changes or this document gets a version bump, and nobody decides
 that alone in the edit.
 
+> **Visual Bible v1.1 is locked:** [05-visual-bible-v1.1.md](05-visual-bible-v1.1.md) (16:9 only, Thmanyah, photographic
+> cutouts, sepia history, red for discoveries only, layered delivery). It overrides this file where they differ.
+
 ---
 
 ## PART A · WHO WE ARE

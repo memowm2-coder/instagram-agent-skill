@@ -1,5 +1,8 @@
 # Editing Checklist · ملف {{000}} · {{slug}}
 
+> **v1.1 override:** the format is **16:9 landscape only (1920×1080)**, and the locked rules in
+> [05-visual-bible-v1.1.md](../05-visual-bible-v1.1.md) replace every 9:16 / 1080×1920 / Reels-crop spec below.
+
 > Before picture lock and before thumbnail. Every box ticked, or the file
 > doesn't move. Bible §25, §26, §31.
 

@@ -1,5 +1,8 @@
 # Storyboard Template · ملف {{000}} · {{slug}}
 
+> **v1.1 override:** the format is **16:9 landscape only (1920×1080)**, and the locked rules in
+> [05-visual-bible-v1.1.md](../05-visual-bible-v1.1.md) replace every 9:16 / 1080×1920 / Reels-crop spec below.
+
 > Stage 5. One panel per beat minimum. Sketch (photo of paper is fine) or describe
 > precisely. Layout codes from Bible §17, transitions from §26.
 

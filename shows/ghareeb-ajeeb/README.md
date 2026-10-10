@@ -16,6 +16,7 @@ in part 4 is approved.**
 | 2 | [02-show-bible.md](02-show-bible.md) | All 32 sections: philosophy → brand memory |
 | 3 | [03-production-system.md](03-production-system.md) | The 14-stage pipeline, gates, folder structure, weekly rhythm, seasons |
 | 4 | [04-creative-director-review.md](04-creative-director-review.md) | The pitch, ten challenges, improvements, and the sign-off table |
+| 5 | [05-visual-bible-v1.1.md](05-visual-bible-v1.1.md) | **Locked** visual rules: 16:9 only, Thmanyah, cutouts, colour, red, layers |
 
 ## Templates
 

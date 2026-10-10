@@ -1,5 +1,8 @@
 # Thumbnail Template (Frame 0) · ملف {{000}} · {{slug}}
 
+> **v1.1 override:** the format is **16:9 landscape only (1920×1080)**, and the locked rules in
+> [05-visual-bible-v1.1.md](../05-visual-bible-v1.1.md) replace every 9:16 / 1080×1920 / Reels-crop spec below.
+
 > Stage 11. The thumbnail is the designed first frame of the reel, what a
 > stranger sees before tapping. Bible §13.
 
