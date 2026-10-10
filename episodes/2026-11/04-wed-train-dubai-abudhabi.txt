@@ -1,0 +1,20 @@
+show: basata
+# بكل بساطة · Wed 4 Nov 2026 · دبي لأبوظبي بالقطار
+
+[PROBLEM]  (Collage: Sheikh Zayed Road, car cutouts piling up, a fuel gauge dropping, a parking ticket)
+مريم: دبي لأبوظبي... زحمة، وبترول، ودوّر على باركن.
+[PROMISE]
+مريم: بكل بساطة... في طريقة ثانية. القطار. وفي ثلاث خطوات.
+[STEPS]  (Blueprint: the line Dubai to Abu Dhabi draws itself; numbered callouts)
+مريم: واحد: المحطة في دبي اسمها اليلايس، في جميرا جولف استيتس.
+مريم: وفيها جسر مشاة لمحطة المترو اللي جنبها، على الخط الأحمر.
+مريم: اثنين: التذكرة من تطبيق قطار الاتحاد أو الموقع... أو من المكاين في المحطة.
+مريم: ثلاثة: تركب... وبعد حوالي ساعة، إنت في أبوظبي.
+[CATCH]  (Majd red callouts)
+مريم: السعر يبدأ من تسعة وثلاثين درهم في الدرجة العادية.
+مريم: والأطفال من سنتين لين سبعطعش... بنص السعر.
+مريم: بس انتبه: الرحلات مب كل ساعة. شوف المواعيد في التطبيق قبل لا تطلع.
+[END]
+مريم: بكل بساطة.
+
+source: Al Yalayis station, pedestrian bridge to Jumeirah Golf Estates Metro (Red Line), booking via app, website and station machines, ~1h04m journey, Comfort from Dh39, children 2-17 at 50 percent, five departures a day at launch: Gulf News guide, Time Out Dubai, Wego, Gulf Business (checked 2026-10-10; reconfirm fares and timetable in the Etihad Rail app before air)

@@ -1,0 +1,20 @@
+show: hacks
+# مريم هاكس · Thu 5 Nov 2026 · حوّل الكيبورد لماوس
+
+[OPEN]  (Frame 1: Maryam on a very serious call. The phone screen is clearly black. Card: "حوّل الكيبورد لماوس")
+صوت: مريم... مريم...
+مريم: (hand up, into the dead phone) لحظة لحظة... هلا.
+صوت: ممكن تعطينا هاك اليوم؟
+[RUSH]
+صوت: بسرعة
+مريم: يلا تم.
+[HACK]  (Screen recording + macro of a thumb on an iPhone keyboard)
+مريم: كتبت رسالة طويلة... وفي النص كلمة غلط؟
+مريم: لا تدق على الكلمة وتتعذب.
+مريم: اضغط ضغطة طويلة على المسافة... الحروف تختفي، والكيبورد يصير ماوس.
+مريم: حرك صبعك... ووقف عند الغلط بالضبط.
+[PROOF]  (Cursor glides to the typo. Fixed.)
+مريم: شفتوا؟
+[CLOSE]
+مريم: عطيتكم الهاك... والباقي عليكم... يلا باي.
+(Maryam back to the dead phone: "ألو؟... ألو؟" She looks at the black screen, then at camera. Deadpan.)

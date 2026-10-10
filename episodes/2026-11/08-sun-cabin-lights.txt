@@ -1,0 +1,26 @@
+show: gharib
+# غريب عجيب · Sun 8 Nov 2026 · ليش يطفون الأنوار وقت الهبوط؟
+
+[INTERRUPT]  (Night. A plane window, city lights below. Click: the cabin goes dark. Paper-rip.)
+مريم: الطيارة تنزل دبي بالليل... وفجأة، يطفون الأنوار.
+[QUESTION]
+مريم: ليش؟ هذي أخطر دقايق في الرحلة... وهم يخلونك في الظلام؟
+[MYSTERY]  (Two taped theory cards, crossed out in red)
+مريم: قالوا عشان تنام. قالوا عشان يوفرون كهربا.
+مريم: ولا وحدة صح.
+[STORY]
+مريم: تخيل الطيارة وقفت... ولازم الكل يطلع. الحين. بالليل.
+مريم: إنت طالع من نور قوي... لظلام كامل.
+مريم: وعيونك تحتاج وقت لين تتعود. وهالوقت... ما عندك إياه.
+[REVEAL]
+مريم: فيطفون النور من قبل... عشان عيونك تكون جاهزة للظلام برا.
+[EXPLAIN]  (Archive label: "CABIN LIGHTING · evacuation readiness")
+مريم: وفي الظلام... علامات المخرج والإضاءة اللي في الأرض تبان أوضح.
+[TWIST]
+مريم: ونفس السبب... ليش يطلبون منك تفتح الشباك.
+مريم: مب عشان المنظر. عشان إذا في نار برا... يعرفون أي باب ما يفتحونه.
+[END]
+مريم: المرة الجاية لين يطفون النور... إنت تعرف ليش.
+(Stamp: غريب عجيب)
+
+source: dimming so eyes adapt for night evacuation, exit and floor lighting easier to see: SmarterTravel (former flight attendant), Afar, Mental Floss, Travelguys; window shades open so crew can see outside hazards like fire and pick a safe exit, recommended practice per IATA/ICAO, set by airlines not the FAA: Afar, AeroCorner, SlashGear (checked 2026-10-10)
