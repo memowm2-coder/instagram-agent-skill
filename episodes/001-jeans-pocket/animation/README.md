@@ -22,3 +22,24 @@ No pixel is generated or redrawn, including Maryam's face.
   which is how the MP4 was produced.
 
 SFX are synthesised placeholders (`tools/sfx2.py`).
+
+---
+
+## EP01 first 5 s (asset pack v1): `ghareeb_ajeeb_ep01_first5s.mp4`
+
+1920×1080, 30 fps, 5.0 s. Remotion composition `Opening5s` (`src/Opening5s.tsx`); identical
+Chromium build `opening5s-scene.html`. Layers in `public/op5/` (made by `tools/op_layers.py`).
+
+| Time | What moves |
+| --- | --- |
+| 0–0.7 s | Stepped camera settle (6 fps), magnifier and paper boil |
+| 0.7–1.8 s | Maryam (original-photo cutout, cream outline) rises from behind the pocket lip in **three steps** (f21, f33, f45), each with a small overshoot |
+| 0.8–1.9 s | Question mark and red ticks stamp in (layers cut from the plate) |
+| 2.5–3.0 s | Blank torn-paper card slides in from the right (stepped, no text) |
+| 2.6–3.6 s | SVG ring draws around the small pocket, SVG arrow draws in, dimension line across the pocket mouth |
+| 3.3–5 s | Camera pushes to the small pocket; the unbranded phone steps in, drops into the pocket, jams, bounces out; Maryam reacts with a jolt |
+
+**No duplicate Maryam:** her original figure in the plate is covered by a torn card cut
+from the plate's own blank paper; the plate's fingers on the pocket lip were cloned out
+with denim from the same lip. **Limitation:** small cloning seams are visible on the lip
+stitching at x≈340 and x≈870 when you look closely.
