@@ -1,8 +1,8 @@
 # غريب عجيب · ep. 01 · ليش السكة مليانة حصى؟
 
-**Airs:** Sunday 1 November 2026, 7:30–9:00pm UAE
-**Script:** [`01-sun-train-stones.txt`](01-sun-train-stones.txt) (the file `qc.py` checks)
-**Status:** approved and logged 2026-10-10 → shoot day 2 (Tue 20 Oct)
+**Airs:** Sunday 18 October 2026 (launch episode), 7:30–9:00pm UAE
+**Script:** [`18-sun-train-stones.txt`](18-sun-train-stones.txt) (the file `qc.py` checks)
+**Status:** approved and logged 2026-10-10 → voice session Mon 12 Oct, final Thu 15 Oct
 
 ```
 EPISODE READY
@@ -16,7 +16,7 @@ length:     ~47s, 8 beats, 101 words at 130 wpm
 qc:         PASS, 0 warnings
 sources:    5, checked 2026-10-09 (see below)
 signature:  paper-rip open on the falling stone · Maryam's voice · desert-sand paper · stamp close
-thumbnail:  concept B (pure collage), no Maryam asset needed
+thumbnail:  concept A (Maryam cutout + collage), 2 new assets needed
 ```
 
 ## The idea, challenged
@@ -92,20 +92,32 @@ right 230 px.
 
 ## Thumbnail
 
-غريب عجيب is voice and motion graphics only, so the cover is pure collage
-until Maryam decides whether her cutout goes on غريب عجيب covers (open
-decision).
+The episode is voice only, but the cover carries Maryam's cutout plus the
+collage (decided 10 Oct).
+
+```
+ASSETS NEEDED  ·  ep. 01 train stones
+
+  expression   squinting at the stone, slightly suspicious, mouth closed
+  pose         crouched, holding one stone up between thumb and finger toward camera
+  angle        slightly low, so the stone is big in the foreground
+  png          yes. Plain light background, clean hair edges
+  clothes      deep tone: navy or charcoal; no grey, the stone must pop
+  props        one angular grey stone, about 4 cm
+  background   built in Photoshop: night-blue paper, rail cutout, sand texture
+  shoot spec:  vertical 4K, soft key from the left, 3 frames. Shoot day: Mon 12 Oct
+```
 
 | concept | idea | why it stops the scroll |
 | --- | --- | --- |
-| A · "حصى؟" with Maryam | Maryam crouched, holding a stone to camera | Strong, but puts her face on a show where she never appears. **Held for Maryam's decision.** |
-| **B · "مب زينة"** ✅ | A train cutout balanced on a single angular stone, a red question mark taped beside it | One object, one impossible image, one question. No face needed. |
-| C · "ثلج؟ لا... رمل" | Snow vs sand split | Gives the twist away on the cover. Rejected. |
+| **A · "حصى؟"** ✅ | Maryam's cutout crouched, holding one stone to camera; a train cutout balanced on the stones behind her; "حصى؟" in majd red | Her face for the grid, the impossible image for the curiosity. |
+| B · "مب زينة" | Train on a single stone, no face | Strong, but the grid needs her face. |
+| C · "ثلج؟ لا... رمل" | Snow vs sand split | Gives the twist away. Rejected. |
 
 **Photoshop notes:**
 - **Layer order:** night-blue paper `#14213D` → rail cutout (diagonal,
-  bottom-left to top-right) → light sand-grain overlay → train cutout on one
-  stone, thick off-white border and soft shadow → "مب زينة" in IBM Plex Sans Arabic
+  bottom-left to top-right) → light sand-grain overlay → train cutout on the
+  stones → Maryam PNG with a thick off-white border and soft shadow → "حصى؟" in IBM Plex Sans Arabic
   Bold, majd red `#C8402B` → film grain 6%.
 - **Text placement:** keep the word inside the central 3:4 area. A small piece
   of tape on the word's corner.
@@ -151,7 +163,7 @@ shadows, handmade, museum exhibition style, no people, no text`
 - **Proposed fix:** ask Etihad Rail's media office to confirm the line and
   supply official footage of a sand-clearing machine for shot TWIST c. That
   also opens the collaboration in the November plan.
-- **If they don't reply by Thu 29 Oct:** use a licensed generic sand-clearing
+- **If they don't reply by Wed 14 Oct:** use a licensed generic sand-clearing
   photo and keep the line as written.
 
 Reply "yes" to log it, or tell me what to change.

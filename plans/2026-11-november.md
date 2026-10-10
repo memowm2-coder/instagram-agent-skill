@@ -31,6 +31,15 @@ using it. Silence shows respect.
 
 ---
 
+## ⚠️ Superseded in part (10 Oct): the launch moved to October
+
+Maryam moved the launch to October (`plans/2026-10-october.md`). These
+episodes now air in October and come out of November: train stones,
+cabin lights, the fake-fines alert, the iOS 27 video-frame hack, and the
+train service explainer. November is rebuilt at the Sunday meeting on
+25 Oct with the first real numbers. The rest of this file is kept as the
+idea bank for that rebuild.
+
 ## Format change (10 Oct, from Maryam)
 
 - **غريب عجيب:** motion graphics and Maryam's voice only. She never appears on camera.

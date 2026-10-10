@@ -59,9 +59,9 @@ For the chosen concept:
 - 1 to 3 words of Arabic, never a sentence.
 - مريم هاكس and بكل بساطة: Maryam's face is on every thumbnail, in the same
   cutout style, so the grid becomes a wall of one recognisable person.
-- غريب عجيب: the episode is voice and motion graphics only. Whether the cover
-  carries her cutout is Maryam's decision (open). Until she decides, the
-  cover is pure collage: the archive card, one object, one word, the red stamp.
+- غريب عجيب: the episode is voice and motion graphics only, but **the cover
+  carries both**: Maryam's cutout plus the collage graphics (decided 10 Oct).
+  The grid stays a wall of one face; the episode stays voice only.
 - The thumbnail asks the question; it never answers it.
 - Readable at 25% size. Check it at that size before approving.
 - Each show is recognisable on the grid by its paper colour alone.

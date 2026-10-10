@@ -141,6 +141,10 @@ the words cannot.
   (hidden, still unknown, big payoff) or it goes to the backup bank.
 - Screen recordings: clean device, no personal notifications, no real
   contacts or messages on screen, Do Not Disturb on.
+- **iPhone language: English** (decided 10 Oct). Most people in the UAE run
+  their phone in English. Every button Maryam names gets an on-screen card
+  with the English label and its Arabic meaning, e.g.
+  `Save Video Frame as Photo = احفظ اللقطة كصورة`.
 
 ### Structure
 
