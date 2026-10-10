@@ -97,5 +97,17 @@
   "25": "https://d8j0ntlcm91z4.cloudfront.net/user_3DgVlCNworUy4sngbqBg4d18uxH/hf_20261010_082742_1f337d57-1775-45e4-96e4-6f921953ed89.mp4",
   "26": "https://d8j0ntlcm91z4.cloudfront.net/user_3DgVlCNworUy4sngbqBg4d18uxH/hf_20261010_083715_b6f5cb50-517d-44d0-b5a4-b0ca6ca287a8.mp4",
   "27": "https://d8j0ntlcm91z4.cloudfront.net/user_3DgVlCNworUy4sngbqBg4d18uxH/hf_20261010_083715_807c6ade-abdf-42aa-a62b-07b0138cfd67.mp4"
+ },
+ "textless_extra": {
+  "16": "94d0fad1-bfb9-44d0-b832-193bfa6a9c34",
+  "18": "4c7eedf1-c3df-4287-a67a-05e9c0efa7cc",
+  "19": "0e85f0f9-9399-4be2-8d91-d8d675a6dff8",
+  "25": "7724e945-aa52-447b-a749-a6f0de6df28e"
+ },
+ "final_cut": {
+  "media_id": "c41e97ff-87ec-4fb5-bfd1-2fdd00436748",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3DgVlCNworUy4sngbqBg4d18uxH/c41e97ff-87ec-4fb5-bfd1-2fdd00436748.mp4",
+  "duration": 70.23,
+  "note": "Clean (no AI text) clips for scenes 1,6,7,8,10,11,16,18,19,25 with Thmanyah labels overlaid; AI numbers kept in 2,3,4,15,21,22."
  }
 }
