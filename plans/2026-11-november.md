@@ -35,7 +35,7 @@ using it. Silence shows respect.
 
 | date | show | episode | hook line (spoken) | thumbnail word |
 | --- | --- | --- | --- | --- |
-| **Sun 1** | غريب عجيب | Why are train tracks full of stones? | "كل سكة قطار في العالم... تحتها حصى. ليش؟" | حصى؟ |
+| **Sun 1** ✅ | غريب عجيب | Why are train tracks full of stones? | "كل سكة قطار في العالم... تحتها حصى. ليش؟" | حصى؟ |
 | **Tue 3** | غريب عجيب | Flag Day: why 3 November, and who drew the flag | "كل سنة نرفع العلم في ٣ نوفمبر... بس ليش ٣ نوفمبر بالذات؟" | ليش ٣؟ |
 | **Wed 4** | بكل بساطة | Dubai to Abu Dhabi by train | "دبي لأبوظبي... بدون سيارة ولا زحمة؟" | بالقطار |
 | **Thu 5** | مريم هاكس | Space bar turns the iPhone keyboard into a trackpad | (gag: talking into a phone that is clearly off) | المسافة |

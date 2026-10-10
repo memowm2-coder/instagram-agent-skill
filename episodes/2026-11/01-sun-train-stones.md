@@ -2,7 +2,7 @@
 
 **Airs:** Sunday 1 November 2026, 7:30–9:00pm UAE
 **Script:** [`01-sun-train-stones.txt`](01-sun-train-stones.txt) (the file `qc.py` checks)
-**Status:** script approved by the ECD → waiting for Maryam's yes
+**Status:** approved and logged 2026-10-10 → shoot day 2 (Tue 20 Oct)
 
 ```
 EPISODE READY
