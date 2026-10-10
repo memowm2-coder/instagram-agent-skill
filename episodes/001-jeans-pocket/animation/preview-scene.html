@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#1C1B19}
+.kf{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;display:none}
+.cam{position:absolute;left:0;top:0;width:1672px;height:941px;transform-origin:0 0}
+.l{position:absolute;left:0;top:0}
+.sh{filter:drop-shadow(-6px 9px 7px rgba(0,0,0,.35))}
+</style></head><body>
+<div class="kf" id="k1"><div class="cam" id="c1"><img class="l" src="1.webp"><img class="l" id="k1_q3" src="layers/k1_q3.png"><img class="l" id="k1_q1" src="layers/k1_q1.png"><img class="l" id="k1_ex" src="layers/k1_ex.png"><img class="l" id="k1_q2" src="layers/k1_q2.png"><img class="l sh" id="k1_m" src="layers/k1_maryam.png"></div></div>
+<div class="kf" id="k9"><div class="cam" id="c9"><img class="l" src="9.webp"><img class="l" id="k9_ring" src="layers/k9_ring.png"><img class="l" id="k9_arrow" src="layers/k9_arrow.png"><img class="l sh" id="k9_ph" src="layers/k9_phone.png"><img class="l sh" id="k9_m" src="layers/k9_maryam.png"></div></div>
+<div class="kf" id="k4"><div class="cam" id="c4"><img class="l" src="4.webp"><img class="l" id="k4_arrow" src="layers/k4_arrow.png"><img class="l sh" id="k4_w" src="layers/k4_watch.png"><img class="l sh" id="k4_m" src="layers/k4_maryam.png"></div></div>
+<svg id="rip" width="2700" height="1080" style="position:absolute;top:0;left:2000px;filter:drop-shadow(-18px 0 16px rgba(0,0,0,.5))"><defs><pattern id="pp" width="2700" height="1080" patternUnits="userSpaceOnUse"><image href="layers/paper.png" width="2700" height="1080" preserveAspectRatio="none"/></pattern></defs><polygon id="ripp" fill="url(#pp)"/><polyline id="ripe" fill="none" stroke="#F3EAD6" stroke-width="10"/></svg>
+<script>
+const B={"k1_q1":[785,55],"k1_q2":[1435,600],"k1_q3":[155,85],"k1_ex":[1460,380],"k9_ring":[215,470],"k9_arrow":[290,120],"k4_arrow":[650,320]};
+const $=i=>document.getElementById(i);
+let sd=5;const R=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+(()=>{const e=[];for(let y=0;y<=1080;y+=16)e.push([R()*60,y]);const p=[...e,[2700,1080],[2700,0]];
+$('ripp').setAttribute('points',p.map(q=>q.join(',')).join(' '));$('ripe').setAttribute('points',e.map(q=>q.join(',')).join(' '))})();
+const K=1920/1672;
+const hash=(a,b)=>{let x=Math.sin(a*127.1+b*311.7)*43758.5453;return x-Math.floor(x)};
+const boil=(f,id,a=1.4,r=.35)=>{const k=Math.floor(f/4);return[(hash(k,id)-.5)*2*a,(hash(k,id+9)-.5)*2*a,(hash(k,id+17)-.5)*2*r]};
+const step=f=>f-(f%2);
+const keys=(f,ks)=>{let v=ks[0][1];for(const[k,x]of ks)if(f>=k)v=x;return v};
+const ez=t=>{t=Math.max(0,Math.min(1,t));return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2};
+function cam(id,f,f0,f1,s0,s1,fx,fy){ // push toward focus point (image px), smooth on ones
+ const t=ez((f-f0)/(f1-f0));const s=K*(s0+(s1-s0)*t);
+ const tx=960-fx*s+(fx*K-960)*(1-t)*0, ty=540-fy*s;
+ // keep frame covered: clamp
+ const cx=Math.min(0,Math.max(1920-1672*s, 960-fx*s*(t)- (1-t)*(1672*s-1920)/2));
+ const cy=Math.min(0,Math.max(1080-941*s, 540-fy*s*t-(1-t)*(941*s-1080)/2));
+ $(id).style.transform=`translate(${cx}px,${cy}px) scale(${s})`;}
+function place(id,f,dx=0,dy=0,rot=0,sc=1,seed=1,amp=1.4){
+ const g=step(f);const[bx,by,br]=boil(g,seed,amp);const b=B[id]||[0,0];
+ const el=$(id);el.style.left=b[0]+'px';el.style.top=b[1]+'px';
+ el.style.transformOrigin='center';el.style.transform=`translate(${dx+bx}px,${dy+by}px) rotate(${rot+br}deg) scale(${sc})`;}
+const pop=(g,at)=>keys(g,[[0,1],[at,1.22],[at+2,1.1],[at+4,.97],[at+6,1]]);
+window.render=function(f){
+ const g=step(f); const sc=f<107?1:f<207?2:3;
+ $('k1').style.display=sc==1?'block':'none';$('k9').style.display=sc==2?'block':'none';$('k4').style.display=sc==3?'block':'none';
+ if(sc==1){cam('c1',f,0,106,1.0,1.08,1150,600);
+  place('k1_m',f,keys(g,[[0,-4],[6,0]]),keys(g,[[0,6],[6,0]]),0,1,1,1.6);
+  place('k1_q1',f,0,0,0,pop(g,10),2);place('k1_q3',f,0,0,0,pop(g,18),3);place('k1_q2',f,0,0,0,pop(g,26),4);place('k1_ex',f,0,0,0,pop(g,40),5);}
+ if(sc==2){cam('c9',f,107,206,1.02,1.1,520,560);
+  place('k9_m',f,0,0,0,1,6,1.6);
+  const pd=keys(g,[[107,0],[124,3],[128,-1],[132,4],[136,0],[146,3],[150,-1],[154,2],[158,0]]);
+  const pr=keys(g,[[107,0],[124,.8],[128,-.5],[132,.9],[136,0],[146,.6],[150,-.4],[154,0]]);
+  place('k9_ph',f,0,pd,pr,1,7,.8);
+  place('k9_arrow',f,0,0,0,pop(g,116),8);place('k9_ring',f,0,0,0,keys(g,[[0,1],[164,1.14],[166,1.06],[168,.98],[170,1]]),9,.8);}
+ if(sc==3){cam('c4',f,207,300,1.0,1.12,480,420);
+  place('k4_m',f,0,0,0,1,10,1.6);
+  const wy=keys(g,[[207,-4],[226,0],[240,-3],[244,0],[258,-3],[262,0],[276,-3],[280,0]]);
+  place('k4_w',f,0,wy,0,1,11,.6);place('k4_arrow',f,keys(g,[[0,0],[236,10],[238,-4],[240,0]]),0,0,pop(g,236),12);}
+ // paper rip: stepped on twos, covers screen at switch frames 107 & 207
+ let tr=null;for(const c of[107,207]) if(f>=c-12&&f<=c+12) tr=c;
+ const r=$('rip');
+ if(tr===null){r.style.display='none'}else{r.style.display='block';const t=(step(f)-(tr-12))/24;r.style.left=(1920-(1920+2700)*t)+'px'}
+};
+Promise.all([...document.images].map(i=>i.decode())).then(()=>{render(0);document.body.dataset.ready=1});
+</script></body></html>
