@@ -18,18 +18,29 @@ These ten rules are locked. Where they conflict with `02-show-bible.md` (v1.0),
 - **RTL reading:** the eye enters top-right; headlines sit in the right half, and
   "forward" motion runs right → left.
 
-## R2 · Typography: Thmanyah only, from the supplied licensed file
+## R2 · Typography: IBM Plex Sans Arabic (supplied, OFL)
 
-- All Arabic on-screen text is set in **Thmanyah**, from the font files supplied
-  by Maryam Studios, with the licence on file in `assets/fonts/LICENSE`.
-- **Text is a live layer in the edit or Remotion, and is never generated inside an image.**
-- Until the files are supplied, no frame with text gets rendered. Placeholder
-  fonts are not allowed in reviewed renders.
-- Hierarchy: Headline (Thmanyah display/bold weight), Subtitle (regular),
-  Technical labels (regular, small, tracked). Weights are confirmed against the
-  supplied family.
+- **The show's only typeface is IBM Plex Sans Arabic**, from the files supplied
+  by Maryam Studios in `brand/fonts/`, under the SIL Open Font License
+  (`brand/fonts/OFL.txt`), which allows commercial use and embedding.
+  *(Replaces the earlier Thmanyah decision, 10 Oct 2026.)*
+- **Text is a live layer in Remotion or the edit, and is never generated inside an image.**
+- **Weights:** Bold 700 for the logo and headlines · Medium 500 for the tagline and
+  subtitles · Regular 400 for technical labels and title-block text.
 - Supersedes Bible §18 typefaces (the rules on line length, numerals and
   maximum lines still apply).
+
+## R2b · Logo
+
+- **Lockup:** «غريب» in Ink #1C1B19 on a torn Kraft scrap, laid over «عجيب»
+  in Ivory #F6F0E3 on a torn deep-red scrap, with masking tape, the tagline
+  «حكايات من العالم… وما وراء المألوف» on a paper scrap underlined by an
+  architectural dimension line, and a charcoal magnifier.
+- **Red in the logo** is the brand mark, which is the one standing exception
+  to R5. Inside episodes, red still means discovery only.
+- **Files:** `brand/logo/ghareeb_ajeeb_logo.png` (transparent),
+  `brand/logo/ghareeb_ajeeb_logo_card_1920x1080.png`. Source:
+  `brand/logo/logo.html`, rendered with `render.js`.
 
 ## R3 · Maryam: photographic cutouts from original photographs only
 

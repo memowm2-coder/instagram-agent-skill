@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Bold.ttf);font-weight:700}
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(IBMPlexSansArabic-Regular.ttf);font-weight:400}
+html,body{margin:0;background:transparent}
+#stage{position:relative;width:1400px;height:1000px;overflow:hidden}
+body.card #stage{width:1920px;height:1080px;background:#F2EBDD}
+.scrap{position:absolute;filter:drop-shadow(-8px 12px 10px rgba(28,27,25,.35))}
+.scrap svg{display:block}
+.word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Plex;font-weight:700;direction:rtl;line-height:1}
+.tag{font-family:Plex;font-weight:500;direction:rtl;color:#2A2826}
+</style></head><body><div id="stage"></div>
+<script>
+const mode=location.hash.slice(1); if(mode==='card')document.body.className='card';
+const stage=document.getElementById('stage');
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+function torn(w,h,j){const p=[];const n=Math.round(w/14),m=Math.round(h/14);
+ for(let i=0;i<=n;i++)p.push([i*w/n,(rnd()*j)]);
+ for(let i=1;i<=m;i++)p.push([w-rnd()*j*.6,i*h/m]);
+ for(let i=n-1;i>=0;i--)p.push([i*w/n,h-rnd()*j]);
+ for(let i=m-1;i>0;i--)p.push([rnd()*j*.6,i*h/m]);
+ return p.map(q=>q.map(v=>v.toFixed(1)).join(',')).join(' ')}
+let uid=0;
+function scrap({x,y,w,h,rot,fill,grain,edge='#EDE4D2',jag=16}){
+ const id='g'+(uid++);const pts=torn(w,h,jag);
+ const d=document.createElement('div');d.className='scrap';
+ Object.assign(d.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px',transform:`rotate(${rot}deg)`});
+ d.innerHTML=`<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs>
+ <filter id="${id}"><feTurbulence type="fractalNoise" baseFrequency="${grain}" numOctaves="4" seed="${uid*3}"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .22 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+ <clipPath id="c${id}"><polygon points="${pts}"/></clipPath></defs>
+ <polygon points="${pts}" fill="${edge}"/>
+ <g clip-path="url(#c${id})" transform="translate(5,5) scale(${(w-10)/w},${(h-10)/h})"><rect width="${w}" height="${h}" fill="${fill}"/><rect width="${w}" height="${h}" filter="url(#${id})"/></g></svg>`;
+ stage.appendChild(d);return d}
+function text(d,t,size,color,dx=0,dy=0){const s=document.createElement('div');s.className='word';s.textContent=t;
+ Object.assign(s.style,{fontSize:size+'px',color,transform:`translate(${dx}px,${dy}px)`});d.appendChild(s)}
+function tape(x,y,w,rot){const t=document.createElement('div');Object.assign(t.style,{position:'absolute',left:x+'px',top:y+'px',width:w+'px',height:'46px',background:'rgba(214,196,160,.78)',transform:`rotate(${rot}deg)`,boxShadow:'0 2px 3px rgba(0,0,0,.12)'});stage.appendChild(t)}
+const ox=mode==='card'?260:0, oy=mode==='card'?40:0;
+// غريب on kraft
+const a=scrap({x:ox+300,y:oy+90,w:760,h:300,rot:-4,fill:'#D9C3A0',grain:.9});text(a,'غريب',250,'#1C1B19',0,-14);
+// عجيب on red
+const b=scrap({x:ox+190,y:oy+360,w:900,h:320,rot:2.5,fill:'#A8291F',grain:.8,edge:'#E9DDC6',jag:20});text(b,'عجيب',270,'#F6F0E3',0,-18);
+tape(ox+930,oy+70,170,28);tape(ox+175,oy+390,150,-32);
+// tagline
+const c=scrap({x:ox+560,y:oy+690,w:560,h:170,rot:-2,fill:'#EFE5D0',grain:1.1,jag:10});
+c.insertAdjacentHTML('beforeend',`<div class="tag" style="position:absolute;right:46px;top:30px;font-size:44px;line-height:1.35;text-align:right">حكايات من العالم<br>… وما وراء المألوف</div>`);
+// dimension line (architect signature) under tagline, charcoal
+stage.insertAdjacentHTML('beforeend',`<svg style="position:absolute;left:${ox+590}px;top:${oy+872}px" width="520" height="40"><g stroke="#2A2826" stroke-width="2.5" fill="none"><line x1="6" y1="8" x2="6" y2="32"/><line x1="514" y1="8" x2="514" y2="32"/><line x1="6" y1="20" x2="514" y2="20"/><path d="M6 20 l14 -6 M6 20 l14 6 M514 20 l-14 -6 M514 20 l-14 6"/></g></svg>`);
+// magnifier, charcoal
+stage.insertAdjacentHTML('beforeend',`<svg style="position:absolute;left:${ox+1110}px;top:${oy+560};filter:drop-shadow(-6px 9px 7px rgba(0,0,0,.3))" width="230" height="230" viewBox="0 0 230 230"><circle cx="90" cy="90" r="62" fill="rgba(246,240,227,.35)" stroke="#2A2826" stroke-width="16"/><path d="M60 62 a40 40 0 0 1 40 -12" stroke="#F6F0E3" stroke-width="7" fill="none" stroke-linecap="round"/><line x1="136" y1="136" x2="205" y2="205" stroke="#2A2826" stroke-width="26" stroke-linecap="round"/></svg>`);
+// charcoal spark marks (not red, per R5)
+stage.insertAdjacentHTML('beforeend',`<svg style="position:absolute;left:${ox+215}px;top:${oy+70}px" width="120" height="140"><g stroke="#2A2826" stroke-width="11" stroke-linecap="round"><line x1="88" y1="18" x2="104" y2="48"/><line x1="40" y1="56" x2="78" y2="74"/><line x1="18" y1="112" x2="64" y2="110"/></g></svg>`);
+document.fonts.ready.then(()=>document.body.dataset.ready=1);
+</script></body></html>
