@@ -1,0 +1,19 @@
+show: hacks
+# مريم هاكس · Tue 27 Oct 2026 · صورك إنت بس، بدون صور الواتساب (iOS 27)
+
+[OPEN]  (Frame 1, face cam: Maryam pressing PRINT again and again on a printer whose plug is lying on the floor. Card: "صورك إنت بس... بدون الواتساب")
+صوت: مريم... مريم...
+مريم: (still pressing PRINT) هلا.
+صوت: ممكن تعطينا هاك اليوم؟
+[RUSH]
+صوت: بسرعة
+مريم: يلا تم.
+[HACK]  (iPhone mockup + screen recording, English UI, Arabic label cards. B-roll: thumb scrolling a cluttered gallery.)
+مريم: تبي صورة صورتها إنت... وتلقى قدامك ألف صورة واتساب وسكرين شوت؟
+مريم: مع iOS 27... افتح الصور، وروح Collections.
+مريم: تحت Utilities... اضغط Captured by Me.
+[PROOF]  (Before/after: cluttered library, then only her own camera photos)
+مريم: بس الصور اللي صورتها إنت بكاميرتك. لا سكرين شوت، ولا صور القروبات.
+[CLOSE]
+مريم: عطيتكم الهاك... والباقي عليكم... يلا باي.
+(Back to the printer. She finally sees the plug on the floor. Looks at camera. Deadpan.)
