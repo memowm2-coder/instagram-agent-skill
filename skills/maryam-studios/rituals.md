@@ -46,7 +46,7 @@ MARYAM STUDIOS  ·  {{MONTH YEAR}}  ·  CONTENT PLAN
 THE MONTH IN ONE LINE      what Maryam owns this month
 
 MIX                        غريب عجيب x{{n}} · مريم هاكس x{{n}} · بكل بساطة x{{n}}
-                           (default per week: 2 / 1 / 1)
+                           (fixed: 1 / 1 / 1 per week, one episode per show. Sun غريب عجيب, Tue مريم هاكس, Thu بكل بساطة)
 
 CALENDAR
   date  day  show          episode                    hook line              status
