@@ -1,0 +1,20 @@
+show: hacks
+# مريم هاكس · Thu 5 Nov 2026 · صورة من الفيديو بدون سكرين شوت (iOS 27)
+
+[OPEN]  (Frame 1, face cam: Maryam typing seriously... on a laptop that is closed. Card: "صورة من الفيديو... بجودة كاملة")
+صوت: مريم... مريم...
+مريم: (still typing on the closed lid) هلا.
+صوت: ممكن تعطينا هاك اليوم؟
+[RUSH]
+صوت: بسرعة
+مريم: يلا تم.
+[HACK]  (iPhone mockup, motion graphics. Screen recording inside the mockup. B-roll: hands on a real iPhone.)
+مريم: عندك فيديو حلو... وتبي منه صورة؟ لا تسوي سكرين شوت.
+مريم: مع تحديث iOS 27... افتح الفيديو في الصور، ووقفه على اللقطة اللي تبيها.
+مريم: اضغط النقاط الثلاث... واختار Save Video Frame as Photo.
+[PROOF]  (Split screen: blurry screenshot vs the saved frame, zoom in on detail)
+مريم: شوف الفرق. صورة بجودة الفيديو كاملة.
+مريم: وفوقها... تنحفظ بنفس تاريخ ومكان الفيديو.
+[CLOSE]
+مريم: عطيتكم الهاك... والباقي عليكم... يلا باي.
+(Back to the laptop. She finally opens the lid. Looks at camera. Deadpan.)

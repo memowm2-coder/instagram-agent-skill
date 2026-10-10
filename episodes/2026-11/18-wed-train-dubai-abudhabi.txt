@@ -1,9 +1,9 @@
 show: basata
-# بكل بساطة · Wed 4 Nov 2026 · دبي لأبوظبي بالقطار
+# بكل بساطة · Wed 18 Nov 2026 · دبي لأبوظبي بالقطار
 
-[PROBLEM]  (Collage: Sheikh Zayed Road, car cutouts piling up, a fuel gauge dropping, a parking ticket)
+[HOOK]  (Face to camera, then B-roll: Sheikh Zayed Road, car cutouts piling up, a fuel gauge dropping, a parking ticket)
 مريم: دبي لأبوظبي... زحمة، وبترول، ودوّر على باركن.
-[PROMISE]
+[STAKE]
 مريم: بكل بساطة... في طريقة ثانية. القطار. وفي ثلاث خطوات.
 [STEPS]  (Blueprint: the line Dubai to Abu Dhabi draws itself; numbered callouts)
 مريم: واحد: المحطة في دبي اسمها اليلايس، في جميرا جولف استيتس.

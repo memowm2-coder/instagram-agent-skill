@@ -31,25 +31,40 @@ using it. Silence shows respect.
 
 ---
 
+## Format change (10 Oct, from Maryam)
+
+- **غريب عجيب:** motion graphics and Maryam's voice only. She never appears on camera.
+- **مريم هاكس:** Maryam face to camera, AI-generated calling voice, and only the
+  newest, strongest iPhone tricks (iOS 27 shipped 14 Sep 2026), shown with an
+  iPhone mockup, screen recordings, B-roll and motion graphics.
+- **بكل بساطة:** alerts, tips and services for citizens and residents that people
+  forward to their family group. Face to camera plus B-roll.
+
+So: Wed 4 is now the fake-fines alert, the train moves to Wed 18, visit visas
+go to the backup bank until ICP/GDRFA confirm the rules, and the three older
+hacks (Tue 10/17/24) will be replaced from the iOS 27 bank once each trick is
+tested on a device. The thumbnail and asset rows below that put Maryam in a
+غريب عجيب cover are on hold until she decides on غريب عجيب covers.
+
 ## The calendar
 
 | date | show | episode | hook line (spoken) | thumbnail word |
 | --- | --- | --- | --- | --- |
 | **Sun 1** ✅ | غريب عجيب | Why are train tracks full of stones? | "كل سكة قطار في العالم... تحتها حصى. ليش؟" | حصى؟ |
 | **Tue 3** | غريب عجيب | Flag Day: why 3 November, and who drew the flag | "كل سنة نرفع العلم في ٣ نوفمبر... بس ليش ٣ نوفمبر بالذات؟" | ليش ٣؟ |
-| **Wed 4** | بكل بساطة | Dubai to Abu Dhabi by train | "دبي لأبوظبي... بدون سيارة ولا زحمة؟" | بالقطار |
-| **Thu 5** | مريم هاكس | Space bar turns the iPhone keyboard into a trackpad | (gag: talking into a phone that is clearly off) | المسافة |
+| **Wed 4** | بكل بساطة · تنبيه | The fake traffic-fine message that steals your card | "وصلتك رسالة: عليك مخالفة خمسين درهم...؟ لا تدفع." | لا تدفع |
+| **Thu 5** | مريم هاكس | iOS 27: save any video frame as a full-quality photo | (gag: typing on a laptop that is closed) | بجودة كاملة |
 | **Fri 6** | غريب عجيب | Why do old books smell good? | "ريحة الكتب القديمة... هذي مب ريحة غبار." | مب غبار |
 | **Sun 8** | غريب عجيب | Why the cabin lights go off when the plane lands | "كل مرة تنزل الطيارة بالليل... يطفون الأنوار." | ليش الظلام؟ |
-| **Tue 10** | مريم هاكس | Scan a document with the Notes app, no scanner | (gag: fighting a printer that is not plugged in) | بدون سكانر |
+| **Tue 10** | مريم هاكس | iOS 27 trick from the hacks bank, tested on device | (gag: fighting a printer that is not plugged in) | tbd |
 | **Wed 11** | بكل بساطة | E-invoicing, explained to business owners | "عندك شركة؟ الفاتورة اللي تعرفها... قريب ما تكفي." | ٢٠٢٧ |
 | **Fri 13** | غريب عجيب | Why does a camel have three eyelids? | "الجمل عنده ثلاث جفون. ثلاث." | ٣ جفون |
 | **Sun 15** | غريب عجيب | Burj Khalifa was drawn from a desert flower | "شكل برج خليفة مب صدفة... هو مرسوم من وردة." | وردة؟ |
-| **Tue 17** | مريم هاكس | Lift a photo's subject off its background on iPhone | (gag: gym, holding the dumbbell, never lifting it) | بلمسة |
-| **Wed 18** | بكل بساطة | Bringing family on a visit visa: the options now | "تبي تجيب أهلك يزورونك شهرين؟" | كم شهر؟ |
+| **Tue 17** | مريم هاكس | iOS 27 trick from the hacks bank, tested on device | (gag: gym, holding the dumbbell, never lifting it) | tbd |
+| **Wed 18** | بكل بساطة · خدمة | Dubai to Abu Dhabi by train | "دبي لأبوظبي... بدون سيارة ولا زحمة؟" | بالقطار |
 | **Fri 20** | غريب عجيب | Why is the Arabic coffee cup only half full? | "ليش الفنجان دايماً نصه فاضي؟" | نص فنجان |
 | **Sun 22** | غريب عجيب | Why is a marathon 42.195 km? (Dubai Run day) | "٤٢ كيلو... و١٩٥ متر. ليش الـ١٩٥؟" | ١٩٥ متر؟ |
-| **Tue 24** | مريم هاكس | Message yourself on WhatsApp to save links and lists | (gag: carrying shopping bags that are empty) | لنفسك |
+| **Tue 24** | مريم هاكس | iOS 27 trick from the hacks bank, tested on device | (gag: carrying shopping bags that are empty) | tbd |
 | **Wed 25** | بكل بساطة | Before White Friday: how to spot a fake store | "الخصم ٩٠٪... والموقع نصاب." | ٩٠٪ |
 | **Fri 27** | غريب عجيب | Why do prices end in 99? (White Friday) | "ليش ولا سعر في المول يخلص بصفر؟" | ٩٩ |
 | **Sun 29** | buffer | National Day holiday explainer (بكل بساطة) if the official announcement is out; otherwise a backup episode | | |

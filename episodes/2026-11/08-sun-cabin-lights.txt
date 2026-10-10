@@ -5,7 +5,7 @@ show: gharib
 مريم: الطيارة تنزل دبي بالليل... وفجأة، يطفون الأنوار.
 [QUESTION]
 مريم: ليش؟ هذي أخطر دقايق في الرحلة... وهم يخلونك في الظلام؟
-[MYSTERY]  (Two taped theory cards, crossed out in red)
+[MYSTERY]  (Two taped theory cards, each crossed out in red. Voice only, no face.)
 مريم: قالوا عشان تنام. قالوا عشان يوفرون كهربا.
 مريم: ولا وحدة صح.
 [STORY]

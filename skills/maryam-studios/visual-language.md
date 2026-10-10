@@ -15,10 +15,11 @@ brand. Do not ship an episode missing one.
    sound, about half a second, as the first image tears open. Always the same
    sound file. This is the audio logo. People will recognise it with their
    eyes closed before they recognise the face.
-2. **The Maryam cutout.** Maryam appears at least once as a die-cut photo with
-   a thick off-white paper border and a soft drop shadow, placed into the
-   collage like a sticker. She is part of the page, not a talking head pasted
-   on top.
+2. **Maryam herself.** In مريم هاكس and بكل بساطة, her face on camera, and in
+   graphics as a die-cut photo with a thick off-white paper border and a soft
+   drop shadow. In غريب عجيب, **her voice only**: the show is pure motion
+   graphics, so the voice carries the recognition. Always the same mic,
+   the same close, warm sound.
 3. **The paper.** Every frame sits on textured paper: warm off-white or the
    show's paper. Visible fibres, light grain. Never flat digital colour.
 4. **The stamp.** The episode ends with the show's rubber stamp thudding onto

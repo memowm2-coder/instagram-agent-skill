@@ -1,0 +1,18 @@
+show: basata
+# بكل بساطة · تنبيه · Wed 4 Nov 2026 · رسالة المخالفة اللي تسرق بطاقتك
+
+[HOOK]  (Face to camera, holding up her phone. Close-up insert: an SMS "unpaid fine Dh50, pay today or Dh500")
+مريم: وصلتك رسالة: عليك مخالفة خمسين درهم... ادفعها اليوم وإلا تصير خمسمية؟ لا تدفع.
+[STAKE]  (B-roll: a card being typed into a fake page, red blueprint warning lines)
+مريم: هذي رسالة نصب. والناس اللي دخلت بيانات بطاقتها... انسحبت فلوسها.
+[STEPS]  (Blueprint: three numbered callouts; screen recordings of the official apps)
+مريم: أول شي: هيئة الطرق ما ترسل لك رابط تدفع منه في رسالة إنت ما طلبتها.
+مريم: ثاني شي: مخالفاتك تشوفها بس من تطبيق RTA، أو تطبيق شرطة دبي، أو موقع RTA الرسمي.
+مريم: ثالث شي: علامات النصب؟ يستعجلك، فيه أغلاط، رقم غريب... ورابط.
+[CATCH]  (Face to camera, majd red callout "901")
+مريم: وإذا وصلتك؟ لا تفتح الرابط. بلّغ شرطة دبي على تسعمية وواحد.
+مريم: وإذا دخلت بياناتك خلاص... كلم بنكك الحين ووقف البطاقة.
+[END]
+مريم: بكل بساطة.
+
+source: RTA phishing advisory (fake small fines, e.g. Dh50 rising to Dh500; RTA never requests payment via links in unsolicited messages; check fines only via RTA Dubai app, Dubai Police app, official RTA website): Gulf News Feb 2026; Dubai Police guidance (stop, verify, report to e-Crime or call 901): Gulf News; fake toll-fine SMS gang, victims who entered card details saw unauthorised withdrawals: Khaleej Times (checked 2026-10-10)

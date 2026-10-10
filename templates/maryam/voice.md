@@ -34,9 +34,10 @@ Fields marked `{{...}}` are Maryam's to fill. The skills never guess them.
   لا تنسون اللايك · تابعوني · any press-release phrase
 - **Do I swear:** no
 - **Emoji in captions:** {{never / one, rarely}}
-- **Face on camera:** always. Maryam is the brand.
-- **Voiceover or to-camera:** both. To-camera for the host moments, voiceover
-  over the collage.
+- **Face on camera:** in مريم هاكس and بكل بساطة, always. In غريب عجيب, never:
+  that show is motion graphics and Maryam's voice only.
+- **Voiceover or to-camera:** غريب عجيب is voice only. مريم هاكس is to-camera
+  (the calling voice is AI-generated). بكل بساطة is to-camera plus B-roll.
 - **Pace:** {{words per minute: time Maryam reading one script out loud.
   Default in the tools is 130 for Arabic.}}
 

@@ -61,7 +61,7 @@ SHOWS = {
         "name": "بكل بساطة",
         "range": (30, 60),
         "ideal": (35, 50),
-        "order": ["PROBLEM", "PROMISE", "STEPS", "CATCH", "END"],
+        "order": ["HOOK", "STAKE", "STEPS", "CATCH", "END"],
         "source": True,
     },
 }

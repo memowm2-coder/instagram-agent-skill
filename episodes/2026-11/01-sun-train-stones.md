@@ -15,8 +15,8 @@ gate:       stop yes · share yes (to: whoever just rode the train) · save yes 
 length:     ~47s, 8 beats, 101 words at 130 wpm
 qc:         PASS, 0 warnings
 sources:    5, checked 2026-10-09 (see below)
-signature:  paper-rip open on the falling stone · Maryam cutout · desert-sand paper · stamp close
-thumbnail:  concept A, 2 new assets needed
+signature:  paper-rip open on the falling stone · Maryam's voice · desert-sand paper · stamp close
+thumbnail:  concept B (pure collage), no Maryam asset needed
 ```
 
 ## The idea, challenged
@@ -60,12 +60,11 @@ story. It's also the reason someone saves it.
 مريم: المرة الجاية لين تركب القطار... ناظر تحت.
 ```
 
-**Delivery notes for Maryam:**
-- Voiceover for everything except two to-camera moments: "ولا وحدة صح." and
-  the last line.
+**Delivery notes for Maryam (voice only, the show is motion graphics):**
+- Close mic, warm and low, like telling a secret.
 - Leave a half-second pause after "حاد." Let the word land.
 - "الرمل." stands alone, low and serious. It's the turn of the episode.
-- The last line is said with a small smile, like sharing a secret.
+- The last line is said with a small smile you can hear.
 
 ## Shot list and on-screen text
 
@@ -76,7 +75,7 @@ so each one has three shots.
 | --- | --- | --- | --- | --- |
 | 0:00 | INTERRUPT | Black → **paper-rip**. A single grey stone drops onto off-white paper, hard click. Camera pulls out: thousands of stones under a rail (photo cutout, parallax). | **كل سكة... تحتها حصى** | paper-rip, stone click |
 | 0:03 | QUESTION | A train cutout slides in on top of the stones, wobbling slightly. Its weight pushes the stones down, stop-motion on twos. | **ليش حصى؟** (ليش in majd red) | low rumble |
-| 0:06 | MYSTERY | Two taped "theory" cards: "زينة" and "رخيص". Each gets a red marker X. Cut to **Maryam to camera**: "ولا وحدة صح." | ~~زينة~~ ~~رخيص~~ | marker squeak ×2 |
+| 0:06 | MYSTERY | Two taped "theory" cards: "زينة" and "رخيص". Each gets a red marker X, timed to "ولا وحدة صح." | ~~زينة~~ ~~رخيص~~ | marker squeak ×2 |
 | 0:10 | STORY a | Blueprint cross-section draws itself: rail, sleeper, ground. A wheel stamps down. | — | pen drawing |
 | 0:13 | STORY b | The same blueprint, but the ground is brown earth. It compresses and the rail sinks, frame by frame. | **التراب ينضغط** | creak |
 | 0:16 | STORY c | Rain falls as cut-paper strips and the earth turns to mud (ink bleed). | **مطر = طين** | rain on paper |
@@ -85,7 +84,7 @@ so each one has three shots.
 | 0:31 | TWIST a | **Paper-tear to desert.** Night-blue paper becomes sand-coloured paper. Wind blows real sand across the collage (shot practically on the table). | **عدو جديد: الرمل** | wind |
 | 0:35 | TWIST b | Sand fills the gaps between the stones in the cross-section. The water drip stops. | **يسكر الفراغات** | sand hiss |
 | 0:38 | TWIST c | Split collage: a snow plough on a European track (licensed photo) vs a sand-removal machine on an Etihad Rail track (licensed or official photo). | **ثلج هناك... رمل هني** | — |
-| 0:43 | END | Back to the single stone from frame 1. Maryam's cutout picks it up and turns to camera: "ناظر تحت." **Stamp: غريب عجيب.** | — | stamp thunk |
+| 0:43 | END | Back to the single stone from frame 1. A paper-cut hand picks it up and turns it toward camera: "ناظر تحت." **Stamp: غريب عجيب.** | — | stamp thunk |
 
 **Safe zone:** cards sit between y=230 and y=1440 and keep clear of the
 right 230 px.
@@ -93,33 +92,20 @@ right 230 px.
 
 ## Thumbnail
 
-Asset list first, as the rules require.
-
-```
-ASSETS NEEDED  ·  ep. 01 train stones
-
-  expression   squinting at the stone, slightly suspicious, mouth closed
-  pose         crouched, holding one stone up between thumb and finger toward camera
-  angle        slightly low, so the stone is big in the foreground
-  png          yes. Plain light background, clean hair edges
-  clothes      Wardrobe B (deep tone: navy or charcoal); no grey, the stone must pop
-  props        one angular grey stone, about 4 cm (from the ballast prop bag)
-  background   built in Photoshop: night-blue paper, rail cutout, sand texture
-  existing     none yet. This is the first shoot
-
-  shoot spec:  vertical 4K, soft key from the left, 3 frames. Shoot on day 2 (Tue 20 Oct)
-```
+غريب عجيب is voice and motion graphics only, so the cover is pure collage
+until Maryam decides whether her cutout goes on غريب عجيب covers (open
+decision).
 
 | concept | idea | why it stops the scroll |
 | --- | --- | --- |
-| **A · "حصى؟"** ✅ | Maryam crouched, holding one stone up to camera; a rail runs diagonally behind her; "حصى؟" in majd red | One object plus one question. It's readable at 25% size, and on the grid it looks like nothing else. |
-| B · "مب زينة" | A train cutout balanced on a single stone | Clever, but no Maryam face, which breaks the grid rule. |
+| A · "حصى؟" with Maryam | Maryam crouched, holding a stone to camera | Strong, but puts her face on a show where she never appears. **Held for Maryam's decision.** |
+| **B · "مب زينة"** ✅ | A train cutout balanced on a single angular stone, a red question mark taped beside it | One object, one impossible image, one question. No face needed. |
 | C · "ثلج؟ لا... رمل" | Snow vs sand split | Gives the twist away on the cover. Rejected. |
 
 **Photoshop notes:**
 - **Layer order:** night-blue paper `#14213D` → rail cutout (diagonal,
-  bottom-left to top-right) → light sand-grain overlay → Maryam PNG with a
-  thick off-white border and soft shadow → "حصى؟" in IBM Plex Sans Arabic
+  bottom-left to top-right) → light sand-grain overlay → train cutout on one
+  stone, thick off-white border and soft shadow → "مب زينة" in IBM Plex Sans Arabic
   Bold, majd red `#C8402B` → film grain 6%.
 - **Text placement:** keep the word inside the central 3:4 area. A small piece
   of tape on the word's corner.

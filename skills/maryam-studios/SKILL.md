@@ -44,6 +44,12 @@ Sharjah can all follow. Not فصحى news Arabic. Not slang that needs a diction
 | **مريم هاكس** | the relationship with the audience | "ههههه حفظتها" | `shows.md` §2 |
 | **بكل بساطة** | real help for life in the UAE | "الحين فهمت" | `shows.md` §3 |
 
+| show | format |
+| --- | --- |
+| غريب عجيب | motion graphics + Maryam's voice only. She never appears on camera. |
+| مريم هاكس | Maryam face to camera; AI-generated calling voice; iPhone mockup, screen recordings, B-roll and motion graphics for the newest iPhone tricks |
+| بكل بساطة | Maryam face to camera + B-roll + blueprint motion graphics. Alerts, tips and services that people forward to their family group. |
+
 Every idea gets assigned to exactly one show before anything is written. If it
 fits none, it is not a Maryam idea. Say so and kill it, or reshape it until it
 fits one. Never invent a fourth format, a "special", a vlog, a reaction or a
@@ -134,7 +140,7 @@ gate:       stop yes · share yes (to: ...) · save yes · maryam yes · brand y
 length:     ~44s, 9 beats, 130 wpm
 qc:         PASS (1 warn: ...)
 sources:    ... (checked {{date}})
-signature:  paper-tear open · Maryam cutout · stamp close
+signature:  paper-tear open · Maryam (voice in غريب عجيب, face in the others) · stamp close
 thumbnail:  concept B, assets needed: 3 (see list)
 
 Reply "yes" to log it, or tell me what to change.
