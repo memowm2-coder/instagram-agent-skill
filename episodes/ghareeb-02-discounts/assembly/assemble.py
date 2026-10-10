@@ -21,7 +21,7 @@ for i in range(1,len(T)+1):
     sp=min(2.0,max(1.0,4.0/D))            # speed up the build-on for short beats (max 2x)
     off=max(0.0,4.0-D*sp)                 # and if still too short, start later so the finished collage shows
     capdur=T[i-1][1]-T[i-1][0]+0.12; capst=T[i-1][0]-starts[i-1]
-    fl=(f"[0:v]trim=start={off:.3f},setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps={FPS},setpts=PTS/{sp:.4f},tpad=stop_mode=clone:stop_duration=6,trim=end_frame={N},setpts=PTS-STARTPTS[v];"
+    fl=(f"[0:v]trim=start={off:.3f},setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,setpts=PTS/{sp:.4f},fps={FPS},tpad=stop_mode=clone:stop_duration=6,trim=end_frame={N},setpts=PTS-STARTPTS[v];"
         f"[1:v]format=rgba,fade=in:st=0.35:d=0.15:alpha=1[l];"
         f"[2:v]format=rgba,fade=in:st={max(0,capst):.3f}:d=0.12:alpha=1,fade=out:st={max(0,capst)+capdur:.3f}:d=0.08:alpha=1[c];"
         f"[v][l]overlay=0:0:enable='gte(t,0.35)'[v2];[v2][c]overlay=0:0:shortest=1,fps={FPS}[out]")
