@@ -1,22 +1,22 @@
 show: basata
-# بكل بساطة · نصيحة · الضريبة الوردية: ليش البنات يدفعون أكثر؟ (نسخة الإمارات)
+# بكل بساطة · نصيحة · ليش البنات يدفعون أكثر في الجيم؟ (الضريبة الوردية، نسخة الإمارات)
 
-[HOOK]  (Face to camera, holding two gym membership cards: one pink, one blue)
-مريم: بنات واجد يقولون: نفس الجيم، نفس الأجهزة... بس اشتراكنا أغلى.
-مريم: فرحنا نتأكد.
-[STAKE]  (B-roll: our team calling gyms, price lists arriving on WhatsApp, gym names blurred)
-مريم: كلمنا {{عدد}} جيمات في الإمارات فيها قسم للشباب وقسم للبنات.
-مريم: {{النتيجة: كم جيم كان فيه سعر البنات أغلى، وبكم الفرق في الشهر}}.
-[STEPS]  (B-roll: a UAE supermarket shelf, same brand, pink vs blue, price tags in close-up, our own shots)
-مريم: وهذا مب بس في الجيم. له اسم: الضريبة الوردية.
-مريم: يعني تدفعين أكثر... بس لأن المنتج مكتوب عليه "للبنات".
-مريم: نفس الماركة، نفس الحجم... الوردي بـ {{سعر}} درهم، والأزرق بـ {{سعر}}.
-مريم: وفي نيويورك سووا دراسة على حوالي ثمانمية منتج... منتجات البنات طلعت أغلى بسبعة بالمية في المتوسط.
-[CATCH]  (Face to camera, blueprint callouts in majd red)
-مريم: الحل؟ قارني بسعر المل والغرام... مب بلون العلبة.
-مريم: شوفي المكونات. إذا نفسها، خذي الأرخص.
-مريم: وفي الجيم، اسألي عن سعر الشباب لنفس الاشتراك. وإذا في فرق... اسألي ليش.
+[HOOK]  (Face to camera, a pink and a blue gym membership card in her hands)
+مريم: تقريباً نص البنات في استبيان GymNation... مقتنعات إنهن يدفعن على الرياضة أكثر من الشباب.
+مريم: صدق ولا لا؟
+[STAKE]  (B-roll: a girl at a gym reception, a card machine)
+مريم: لأن هالإحساس بروحه... يخليج تصرفين أكثر.
+[STEPS]  (Blueprint: two price columns build, KD numbers in the first, AED in the second)
+مريم: في الكويت، جيم سعر البنات فيه أغلى بعشرين دينار في الشهر.
+مريم: بس في الإمارات، الفرق مب بين بنت وولد... بين نوع جيم ونوع.
+مريم: نوادي البنات بس تبدأ من ثمانمية وخمسين في الشهر.
+مريم: وسلاسل فيها قسم للبنات... من تسعة وتسعين.
+[CATCH]  (B-roll: supermarket shelf, pink vs blue, then face to camera)
+مريم: ولها اسم: الضريبة الوردية. دراسة في نيويورك لقت منتجات البنات أغلى بسبعة بالمية بالمتوسط.
+مريم: بس دراسة بعدها قارنت نفس المكونات... وفي فئات كثيرة طلعت أرخص.
+مريم: الحل مب إنج تزعلين. الحل إنج تقارنين.
+مريم: اسألي الجيم عن سعر الشباب لنفس الباقة... وقارني بسعر المل، مب بلون العلبة.
 [END]
 مريم: بكل بساطة.
 
-source: NYC Department of Consumer Affairs, "From Cradle to Cane" (2015): ~800 products, 35 categories, women's versions 7% more on average (Time, Fortune); later like-for-like study found the gap smaller or reversed in many categories (Chicago Booth Review, 2022); UAE gym and shelf prices: Maryam Studios field check {{تاريخ الجولة}}
+source: 46% of women believe they pay more for equivalent fitness products, and the belief shapes spending: GymNation UAE & KSA Health & Fitness Report 2026; Kuwait gym 95 vs 75 KD a month: Kuwait Times (TikTok @kuwaittimesdaily); women-only clubs in Dubai from AED 850 (In Shape, Al Quoz) to AED 1,200 (Zabeel Ladies Club): Property Finder / club listings; mixed chains with a ladies area from AED 99: GymNation; NYC "From Cradle to Cane" 2015, women's versions 7% more on average: Time, Fortune; like-for-like follow-up found women's products slightly cheaper in many categories: Chicago Booth Review 2022 (checked 2026-10-10; reconfirm the four AED and KD prices on the official pages before air)
