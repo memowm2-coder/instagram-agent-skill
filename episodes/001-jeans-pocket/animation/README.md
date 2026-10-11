@@ -43,3 +43,29 @@ Chromium build `opening5s-scene.html`. Layers in `public/op5/` (made by `tools/o
 from the plate's own blank paper; the plate's fingers on the pocket lip were cloned out
 with denim from the same lip. **Limitation:** small cloning seams are visible on the lip
 stitching at x≈340 and x≈870 when you look closely.
+
+---
+
+## v2: Scene 01 refined + Scene 02 (`s01-s02-scene.html`, global frames 0–299)
+
+| File | Frames |
+| --- | --- |
+| `ghareeb_ajeeb_ep01_scene01_5s.mp4` | 0–149 (Scene 01, peel begins at 4.5 s) |
+| `ghareeb_ajeeb_ep01_scene02_5s.mp4` | 150–299 (peel completes, Scene 02) |
+| `ghareeb_ajeeb_ep01_s01_s02_10s.mp4` | 0–299 continuous |
+
+**Scene 01 changes:** three distinct stepped rises with −3°, +2.5°, −2° tilt (7.5 fps holds);
+editable title «ليش الجينز فيه جيب صغير؟» in IBM Plex Sans Arabic Bold, each word its own
+paper scrap stamped in RTL order (live text, browser-shaped); the ring around the tiny pocket
+draws progressively as its own SVG stroke (3.2–4.0 s); the phone has moved to Scene 02;
+a diagonal paper peel starts at 4.5 s and finishes at 5.6 s.
+
+**Scene 02:** locked plate `scene02_approved_full_frame.png`. The plate's phone and hand are
+covered by a torn card cut from the plate's own blank paper (so Maryam's arm reads as tucked
+behind paper); Maryam (thinking pose from this plate) is a separate layer that reacts; the
+unbranded phone asset descends, jams at the pocket mouth (behind the extracted pocket front),
+bounces out and lands; the red ✗ stamps the pocket (disproved belief, Bible R5).
+
+**Remotion:** `src/Opening5s.tsx` still holds the previous 5 s version. The v2 timeline exists
+only as `s01-s02-scene.html` (same `render(frame)` model), because npm is blocked in this
+environment and the Remotion port couldn't be compiled or tested.
