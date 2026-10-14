@@ -1,0 +1,74 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#1C1B19}
+.L{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+.L img,.L svg{position:absolute}
+.sh{filter:drop-shadow(-8px 12px 9px rgba(0,0,0,.4))}
+</style></head><body>
+<div class="L" id="d_plate"><img src="l/plate_clean.png" style="left:0;top:0"></div>
+<div class="L" id="d_mag"><img id="mag" src="l/magnifier.png" style="left:0;top:85px"></div>
+<div class="L" id="d_card"><img id="card" class="sh" src="l/back_card.png" style="left:315px;top:25px;width:860px;height:600px"></div>
+<div class="L" id="d_mar"><img id="mar" class="sh" src="l/maryam_paper_cutout_cream_outline.png" style="width:940px;left:270px;top:60px"></div>
+<div class="L" id="d_pocket"><img id="pocket" class="sh" src="l/pocket_front.png" style="left:0;top:0"></div>
+<div class="L" id="d_phone"><img id="phone" class="sh" src="l/smartphone_unbranded_alpha.png" style="width:400px;left:0;top:0"></div>
+<div class="L" id="d_patch"><img id="patch" src="l/small_patch.png" style="left:0;top:0;filter:drop-shadow(0 -6px 6px rgba(0,0,0,.35))"></div>
+<div class="L" id="d_deco">
+ <img id="qmark" class="sh" src="l/qmark.png" style="left:70px;top:80px">
+ <img id="ticks_l" src="l/ticks_l.png" style="left:470px;top:140px">
+ <img id="ticks_r" src="l/ticks_r.png" style="left:975px;top:320px">
+ <img id="tcard" class="sh" src="l/torn_paper_blank_alpha.png" style="left:1060px;top:110px;width:720px">
+</div>
+<div class="L" id="d_svg"><svg width="1920" height="1080" fill="none" stroke="#F6F0E3" style="left:0;top:0;filter:drop-shadow(2px 3px 0 rgba(28,27,25,.85))" stroke-linecap="round" stroke-linejoin="round">
+ <path id="ring" d="M660 700 C 990 690 1020 770 990 870 C 960 975 420 985 345 900 C 285 830 330 712 660 700" stroke-width="7" stroke-dasharray="1 0"/>
+ <path id="arrow" d="M1400 480 C 1320 640 1180 720 1040 760" stroke-width="9"/>
+ <path id="head" d="M1072 724 L1040 760 L1086 772" stroke-width="9"/>
+ <g id="dim" stroke="#F6F0E3" stroke-width="4"><line id="dimL" x1="368" y1="1000" x2="962" y2="1000"/><line x1="368" y1="980" x2="368" y2="1020"/><line id="dimR" x1="962" y1="980" x2="962" y2="1020"/></g>
+</svg></div>
+<script>
+const $=i=>document.getElementById(i);
+const hash=(a,b)=>{let x=Math.sin(a*127.1+b*311.7)*43758.5453;return x-Math.floor(x)};
+const boil=(g,id,a=1.5,r=.4)=>{const k=Math.floor(g/4);return[(hash(k,id)-.5)*2*a,(hash(k,id+9)-.5)*2*a,(hash(k,id+17)-.5)*2*r]};
+const S4=f=>f-(f%4);            // 7.5 fps stepping for characters/objects
+const keys=(f,ks)=>{let v=ks[0][1];for(const[k,x]of ks)if(f>=k)v=x;return v};
+const ez=t=>{t=Math.max(0,Math.min(1,t));return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2};
+function T(id,dx,dy,r=0,s=1,o){const e=$(id);e.style.transformOrigin=o||'center';e.style.transform=`translate(${dx}px,${dy}px) rotate(${r}deg) scale(${s})`}
+function draw(id,t){const p=$(id);const L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L*(1-Math.max(0,Math.min(1,t)))}
+window.render=function(f){
+ const g=S4(f);
+ // camera: 0-0.7s stepped settle (6fps), then smooth push to small pocket from 3.3s
+ let cs=keys(f,[[0,1.035],[5,1.025],[10,1.015],[15,1.008],[20,1]]), fx=960, fy=540;
+ if(f>=100){const t=ez((f-100)/50);cs=1+0.32*t;fx=960+(660-960)*t;fy=540+(820-540)*t}
+ const depth={d_plate:1,d_mag:1.05,d_card:1.03,d_mar:1.06,d_pocket:1.09,d_phone:1.12,d_patch:1.1,d_deco:1.12,d_svg:1.1};
+ // gentle drift for parallax even when camera is "still"
+ const drift=Math.sin(f/150*Math.PI)*6;
+ for(const[id,d]of Object.entries(depth)){const s=1+(cs-1)*d;const dx=(drift*(d-1)*8);
+  $(id).style.transform=`translate(${fx-fx*s+(960-fx)*(s-1)*0+dx}px,${fy-fy*s}px) scale(${s})`;}
+ // magnifier wobble
+ const[mx,my,mr]=boil(g,3,2,.6);T('mag',mx,my,mr);
+ // back card: there from start, small boil
+ const[cx,cy,cr]=boil(g,4,1,.3);T('card',cx,cy,-2+cr);
+ // Maryam: three clear stop-motion steps rising from behind the pocket lip
+ let my2=keys(f,[[0,470],[21,300],[25,275],[33,90],[37,70],[45,-150],[49,-125],[53,-135]]);
+ let mrot=keys(f,[[0,0],[21,-3],[33,2],[45,-1.5],[53,0]]);
+ if(f>=124) {my2+=keys(f,[[124,-28],[128,-10],[132,-18],[136,0]]); mrot+=keys(f,[[124,3],[132,-2],[136,0]]);}
+ const[ax,ay,ar]=boil(g,1);T('mar',ax,my2+ay,mrot+ar);
+ // pocket + patch: subtle independent boil
+ const[px,py]=boil(g,5,1.2,0);T('pocket',px,py);const[qx,qy]=boil(g,6,1.2,0);T('patch',qx,qy);
+ // decorations pop in (stepped)
+ const pop=(at)=>keys(f,[[0,0],[at,1.25],[at+4,0.95],[at+8,1]]);
+ const[dx1,dy1,dr1]=boil(g,7);T('qmark',dx1,dy1,dr1,pop(24));
+ T('ticks_l',0,0,0,pop(40));T('ticks_r',0,0,0,pop(56));
+ // torn paper title card slides in 2.5-3.3s (stepped from right)
+ const tx=keys(f,[[0,1200],[75,820],[79,420],[83,120],[87,-20],[91,0]]);const[tx2,ty2,tr2]=boil(g,8,1,.3);
+ T('tcard',tx+tx2,ty2,3+tr2);
+ // SVG investigation marks
+ draw('ring',(f-78)/18);draw('arrow',(f-92)/12);draw('head',(f-104)/4);
+ $('dim').style.opacity=f>=110?1:0;$('dimL').setAttribute('x2',368+594*Math.min(1,Math.max(0,(f-110)/10)));
+ // smartphone: approach, fail to fit, bounce out (7.5fps steps)
+ const P=[[0,[1700,-900,24]],[100,[1500,-620,18]],[104,[1150,-380,10]],[108,[870,-140,4]],[112,[650,40,0]],[116,[465,170,0]],[120,[465,300,0]],
+          [122,[465,280,-2]],[124,[465,295,2]],[126,[520,90,-14]],[130,[700,-120,-28]],[134,[960,-200,-38]],[138,[1180,-80,-50]],[142,[1300,180,-64]],[146,[1330,260,-70]]];
+ let pv=P[0][1];for(const[k,v]of P)if(f>=k)pv=v;const[bx,by,br]=boil(g,9,1,.4);
+ $('phone').style.left='0px';$('phone').style.top='0px';T('phone',pv[0]+bx,pv[1]+by,pv[2]+br,1,'50% 50%');
+ $('phone').style.display=f>=100?'block':'none';
+};
+Promise.all([...document.images].map(i=>i.decode())).then(()=>{render(0);document.body.dataset.ready=1});
+</script></body></html>
