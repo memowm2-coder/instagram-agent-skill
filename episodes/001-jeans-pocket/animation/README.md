@@ -17,9 +17,28 @@ No pixel is generated or redrawn, including Maryam's face.
 
 **Two builds of the same animation:**
 - `src/` is Remotion + React + TypeScript (`KeyframeScene`, `PaperRip`, `motion.ts`).
-  **Not yet run**, because the environment blocks the npm registry. `npm i && npm run preview` once it's open.
+  Installed and checked with `npm install` (Remotion 4.0.242); `npm run preview` renders the 10 s test.
 - `preview-scene.html` + `tools/frames.js` is the identical motion rendered in Chromium,
   which is how the MP4 was produced.
+
+---
+
+## EP01 full episode in Remotion: `src/Episode01.tsx`
+
+`npm install && npm run ep01` renders `out/ghareeb_ajeeb_EP01_remotion_1920x1080.mp4`
+(1920×1080, 30 fps, 2573 frames = 85.8 s, H.264 CRF 16 + AAC).
+
+- A port of `full/project/episode.html`, the approved 85.7 s cut. Same scene table, camera moves,
+  hold keys, boil offsets, stepped stop motion, and paper-tear wipes. `render(frame)` became
+  React as a function of `useCurrentFrame()`.
+- Assets are in `public/ep01/` (copied from `full/project/a/`, the approved paper cutouts and
+  transparent PNGs; fonts are IBM Plex Sans Arabic Bold and Medium).
+- Audio: the original Maryam VO (`public/ep01/vo.wav`, extracted from the approved clean VO cut,
+  so it is unchanged apart from one AAC decode and encode) at full level. The four SFX stems in
+  `public/ep01/sfx/` at −9 dB under it. **No music.**
+- Check: frames 0–2572 compared against the approved MP4 (see the verification notes in the commit).
+
+Edit the timing in `Episode01.tsx` only, not in the HTML source. The HTML stays as the approved reference.
 
 SFX are synthesised placeholders (`tools/sfx2.py`).
 

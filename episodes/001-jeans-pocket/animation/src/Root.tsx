@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {KeyframePreview} from './KeyframePreview';
 import {Opening5s} from './Opening5s';
+import {Episode01, EP01_FRAMES} from './Episode01';
 
 export const Root: React.FC = () => (
   <>
@@ -9,5 +10,7 @@ export const Root: React.FC = () => (
     durationInFrames={300} fps={30} width={1920} height={1080} />
   <Composition id="Opening5s" component={Opening5s}
     durationInFrames={150} fps={30} width={1920} height={1080} />
+  <Composition id="Episode01" component={Episode01}
+    durationInFrames={EP01_FRAMES} fps={30} width={1920} height={1080} />
   </>
 );
