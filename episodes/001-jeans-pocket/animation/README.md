@@ -38,6 +38,9 @@ No pixel is generated or redrawn, including Maryam's face.
   `public/ep01/sfx/` at −9 dB under it. **No music.**
 - Check: frames 0–2572 compared against the approved MP4 (see the verification notes in the commit).
 
+**Delivered file:** `ghareeb_ajeeb_ep01_remotion_1920x1080.mp4` (71 MB, H.264 CRF 23 + AAC re-encoded from the
+CRF 16 `npm run ep01` output, which was 259 MB and over GitHub's limit).
+
 Edit the timing in `Episode01.tsx` only, not in the HTML source. The HTML stays as the approved reference.
 
 SFX are synthesised placeholders (`tools/sfx2.py`).
