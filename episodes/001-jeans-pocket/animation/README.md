@@ -48,3 +48,22 @@ Paper rips (`PaperRip`, texture cut from keyframe 1) at 522, 1437, 1908 and 2313
 
 Audio: Maryam's original VO (`public/ep01/vo.wav`, from the approved clean VO cut) at full level, plus
 SFX stems retimed to these moves (`tools/sfx_ep01.py` → `public/ep01/sfx/`) at −9 dB. **No music.**
+
+---
+
+## EP01 Vox-style cut: `src/EpisodeVox.tsx`
+
+`npx remotion render src/index.ts EpisodeVox out/ghareeb_ajeeb_EP01_vox_full.mp4` (1920×1080, 30 fps, 85.8 s).
+The committed `ghareeb_ajeeb_ep01_vox_1920x1080.mp4` is that render at H.264 CRF 22.
+
+An explainer treatment of the same episode, in the approved collage identity: one big dark board, the
+approved pieces pinned on it with tape, and a single camera that travels across it with eased moves,
+whip pans (directional motion blur), a zoom-through into the pocket, and a final pull-back over the
+whole board. Yellow highlighter sweeps, hand-drawn red rings, a patent card (C1–C3), a loupe on the rivet,
+pocket numbers on the jeans (C4, C5), the cross-section reveal of the watch (C6), the 1873 → 1901 → today
+timeline (C8, C9), and the audience question.
+
+- Cutouts in `public/vox/` are cropped from the approved layers (`tools`-free: see the commit); archival
+  photos are crops of keyframes 1 and 4, sepia-graded and labelled «تصوّر توضيحي».
+- Timing follows the speech segments of Maryam's VO (silence detection on `vo.wav`), matched to the beats of `02-script.md`.
+- Audio: Maryam's original VO, plus `tools/sfx_vox.py` stems (whoosh, pen, paper, stamp, watch) at −9 dB. **No music.**
