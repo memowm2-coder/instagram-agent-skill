@@ -1,5 +1,13 @@
 # EP01 · Vox-style cut made with Higgsfield
 
+**Latest: `ghareeb_ajeeb_ep01_vox_v2_1920x1080.mp4`** (`build/edit2.js` + `build/sfx2.py`). It's the same voice, music and Kling shots, made
+with no new credits. Every board beat is now 2.5D: a Higgsedit compose camera with depth layers, a fast whip in, a drift and push,
+and a whip out. Scenes 03, 06, 08c and 12 are built from the approved plates' own layers (keyframes 4 and 9, plus the scene-01 plate),
+so the camera moves through the depth. Maryam appears as a presenter cutout in the board beats, the long beats are split
+into faster sub-shots, and each element has motion blur.
+
+v1 below (`ghareeb_ajeeb_ep01_vox_1920x1080.mp4`, `build/gen_edit.py`).
+
 `ghareeb_ajeeb_ep01_vox_1920x1080.mp4`: 1920×1080, 30 fps, **62.4 s** (from 85.7 s), H.264 + AAC, −14 LUFS.
 Fast cuts on every phrase, with Maryam's original voice, music, and SFX.
 
