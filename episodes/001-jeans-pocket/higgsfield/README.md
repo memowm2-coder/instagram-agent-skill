@@ -1,5 +1,9 @@
 # EP01 · Vox-style cut made with Higgsfield
 
+**Latest: `ghareeb_ajeeb_ep01_vox_v3_1920x1080.mp4`** (`build/edit3.js`). This is v2 on a paper-scrap collage background instead of black:
+`build/make_bg.py` cuts torn scraps only from the approved plates' own cream paper, kraft and script pieces and adds tape
+(`build/paper_bg.jpg`). Icons, the timeline and labels are re-inked for the light background, and the vignette is lighter and warm. No new credits.
+
 **Latest: `ghareeb_ajeeb_ep01_vox_v2_1920x1080.mp4`** (`build/edit2.js` + `build/sfx2.py`). It's the same voice, music and Kling shots, made
 with no new credits. Every board beat is now 2.5D: a Higgsedit compose camera with depth layers, a fast whip in, a drift and push,
 and a whip out. Scenes 03, 06, 08c and 12 are built from the approved plates' own layers (keyframes 4 and 9, plus the scene-01 plate),
