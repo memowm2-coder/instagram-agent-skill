@@ -1,5 +1,9 @@
 # EP01 · Vox-style cut made with Higgsfield
 
+**Latest: `ghareeb_ajeeb_ep01_vox_v5_1920x1080.mp4`** (`build/edit5.js`). Background A is one clean aged sheet (`build/make_bg_A.py` → `build/bg_A.jpg`).
+The ending has no text: Maryam rises from the pocket and the new logo (`build/logo_v2.png`, transparent) stamps beside her. No new credits.
+The new logo files are also in `shows/ghareeb-ajeeb/brand/logo/` (`ghareeb_ajeeb_logo_v2.png` transparent; `…_tagline_black.png` with the tagline, on black).
+
 **Latest: `ghareeb_ajeeb_ep01_vox_v3_1920x1080.mp4`** (`build/edit3.js`). This is v2 on a paper-scrap collage background instead of black:
 `build/make_bg.py` cuts torn scraps only from the approved plates' own cream paper, kraft and script pieces and adds tape
 (`build/paper_bg.jpg`). Icons, the timeline and labels are re-inked for the light background, and the vignette is lighter and warm. No new credits.
