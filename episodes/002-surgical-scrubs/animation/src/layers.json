@@ -1,0 +1,90 @@
+{
+ "01": {
+  "name": "medical_scrubs_transformation_collage",
+  "plate": "plates/01_medical_scrubs_transformation_collage.png",
+  "maryam": "layers/01_maryam.png",
+  "maryamBox": [
+   759,
+   107,
+   800,
+   833
+  ]
+ },
+ "02": {
+  "name": "archival_medicine_collage_with_presenter",
+  "plate": "plates/02_archival_medicine_collage_with_presenter.png",
+  "maryam": "layers/02_maryam.png",
+  "maryamBox": [
+   836,
+   122,
+   810,
+   818
+  ]
+ },
+ "03": {
+  "name": "surgical_light_collage_portrait",
+  "plate": "plates/03_surgical_light_collage_portrait.png",
+  "maryam": "layers/03_maryam.png",
+  "maryamBox": [
+   725,
+   83,
+   928,
+   857
+  ]
+ },
+ "04": {
+  "name": "vision_science_collage_with_medical_presenter",
+  "plate": "plates/04_vision_science_collage_with_medical_presenter.png",
+  "maryam": "layers/04_maryam.png",
+  "maryamBox": [
+   337,
+   66,
+   1320,
+   874
+  ]
+ },
+ "05": {
+  "name": "color_analysis_scrub_style_collage",
+  "plate": "plates/05_color_analysis_scrub_style_collage.png",
+  "maryam": "layers/05_maryam.png",
+  "maryamBox": [
+   699,
+   127,
+   918,
+   813
+  ]
+ },
+ "06": {
+  "name": "balancing_scrubs_strain_to_comfort",
+  "plate": "plates/06_balancing_scrubs_strain_to_comfort.png",
+  "maryam": "layers/06_maryam.png",
+  "maryamBox": [
+   396,
+   165,
+   821,
+   775
+  ]
+ },
+ "07": {
+  "name": "forensic_scrub_evidence_board_reveal",
+  "plate": "plates/07_forensic_scrub_evidence_board_reveal.png",
+  "maryam": "layers/07_maryam.png",
+  "maryamBox": [
+   453,
+   59,
+   1218,
+   881
+  ]
+ },
+ "08": {
+  "name": "surgical_scrubs_collage_explainer",
+  "plate": "plates/08_surgical_scrubs_collage_explainer.png",
+  "maryam": "layers/08_maryam.png",
+  "maryamBox": [
+   650,
+   107,
+   888,
+   833
+  ]
+ }
+}
