@@ -26,9 +26,9 @@
   "plate": "plates/03_surgical_light_collage_portrait.png",
   "maryam": "layers/03_maryam.png",
   "maryamBox": [
-   725,
+   746,
    83,
-   928,
+   907,
    857
   ]
  },
@@ -37,10 +37,10 @@
   "plate": "plates/04_vision_science_collage_with_medical_presenter.png",
   "maryam": "layers/04_maryam.png",
   "maryamBox": [
-   337,
-   66,
-   1320,
-   874
+   740,
+   96,
+   917,
+   844
   ]
  },
  "05": {
@@ -48,9 +48,9 @@
   "plate": "plates/05_color_analysis_scrub_style_collage.png",
   "maryam": "layers/05_maryam.png",
   "maryamBox": [
-   699,
+   690,
    127,
-   918,
+   929,
    813
   ]
  },
@@ -60,9 +60,9 @@
   "maryam": "layers/06_maryam.png",
   "maryamBox": [
    396,
-   165,
-   821,
-   775
+   159,
+   1221,
+   781
   ]
  },
  "07": {
@@ -70,10 +70,10 @@
   "plate": "plates/07_forensic_scrub_evidence_board_reveal.png",
   "maryam": "layers/07_maryam.png",
   "maryamBox": [
-   453,
-   59,
-   1218,
-   881
+   970,
+   117,
+   701,
+   628
   ]
  },
  "08": {

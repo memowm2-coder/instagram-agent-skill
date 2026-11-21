@@ -56,7 +56,32 @@ const Exit: React.FC<{sc: Scene; p: number; children: React.ReactNode}> = ({sc, 
     const j = Math.floor(p * 6);
     return <AbsoluteFill style={{transform: `translate(${(j % 2 ? -1 : 1) * 14}px, ${j * 6}px) rotate(${(j % 2 ? 1 : -1) * 0.6}deg)`}}>{children}</AbsoluteFill>;
   }
-  if (sc.exit === 'slide' || sc.exit === 'pinSnap' || sc.exit === 'diagramWipe' || sc.exit === 'archivalReveal') {
+  if (sc.exit === 'diagramWipe') {
+    // a dashed technical line sweeps right→left and wipes the scene away behind it
+    const e = Easing.inOut(Easing.cubic)(p), X = W * (1 - e);
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{clipPath: `inset(0 ${W - X}px 0 0)`}}>{children}</AbsoluteFill>
+        <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
+          <line x1={X} y1={-10} x2={X} y2={H + 10} stroke="#1C1B19" strokeWidth={3} strokeDasharray="14 10" />
+          <circle cx={X} cy={H * 0.5} r={16} fill="none" stroke="#1C1B19" strokeWidth={3} />
+          <line x1={X - 26} y1={H * 0.5} x2={X + 26} y2={H * 0.5} stroke="#1C1B19" strokeWidth={3} />
+        </svg>
+      </AbsoluteFill>
+    );
+  }
+  if (sc.exit === 'pinSnap') {
+    // the pin pops: the whole sheet drops off the board, swinging from its top-right corner
+    const e = Easing.in(Easing.quad)(p);
+    return <AbsoluteFill style={{transformOrigin: '100% 0%', transform: `rotate(${-28 * e}deg) translateY(${H * 1.1 * e * e}px)`,
+      filter: `drop-shadow(-10px 30px 30px rgba(0,0,0,${0.5 * e}))`}}>{children}</AbsoluteFill>;
+  }
+  if (sc.exit === 'archivalReveal') {
+    // flash to sepia, then the sheet slides up like a card pulled from the file
+    const sep = clamp01(p / 0.35), e = Easing.in(Easing.cubic)(clamp01((p - 0.3) / 0.7));
+    return <AbsoluteFill style={{transform: `translateY(${-H * 1.05 * e}px) rotate(${-2 * e}deg)`, filter: `sepia(${sep}) brightness(${1 + 0.25 * sep * (1 - e)}) drop-shadow(0 30px 30px rgba(0,0,0,${0.5 * e}))`}}>{children}</AbsoluteFill>;
+  }
+  if (sc.exit === 'slide') {
     const e = Easing.in(Easing.cubic)(p);
     return <AbsoluteFill style={{transform: `translateX(${W * 1.05 * e}px) rotate(${3 * e}deg)`, filter: `drop-shadow(-20px 0 30px rgba(0,0,0,${0.5 * e}))`}}>{children}</AbsoluteFill>;
   }

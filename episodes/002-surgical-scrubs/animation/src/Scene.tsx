@@ -220,6 +220,17 @@ const MaryamLayer: React.FC<{sc: Scene; t: number; frame: number}> = ({sc, t, fr
     }
     if (a.kind === 'nod') { y += 9 * decayWave(u, 2.2, 3); rot += 0.8 * decayWave(u, 2.2, 3); }
     if (a.kind === 'lean') { if (u > 0) { const k = springish(u, 10, 0.5); rot += 2.2 * (a.amt ?? 1) * k; } }
+    if (a.kind === 'exit') {
+      if (u < 0) continue;
+      const to = a.to ?? {}, k = Easing.in(Easing.back(1.4))(clamp01(u / 0.45));
+      x += (to.x ?? 0) * k; y += (to.y ?? 0) * k; rot += (to.r ?? 0) * k; move = Math.max(move, k);
+      if (u > 0.45) op = 0;
+    }
+    if (a.kind === 'stamp') { // raise the stamp, then slam it down at `at`
+      const up = clamp01((u + 0.45) / 0.35), down = clamp01(u / 0.07);
+      if (u > -0.45) { const h = u < 0 ? Easing.out(Easing.cubic)(up) : 1 - Easing.in(Easing.quad)(down); y += -55 * h; rot += 1.2 * h; s *= 1 + 0.02 * h; move = Math.max(move, h); }
+      if (u > 0.07) { y += 6 * decayWave(u - 0.07, 6, 9); s *= 1 - 0.012 * decayWave(u - 0.07, 6, 9); }
+    }
     if (a.kind === 'react') { const k = springish(u, 14, 0.35); s *= 1 - 0.01 * k + 0.02; rot += 1.4 * decayWave(u, 1.6, 2.5); y += -10 * decayWave(u, 1.6, 2.5); }
   }
   const step = Math.floor(frame / 2);
@@ -242,7 +253,9 @@ export const SceneView: React.FC<{sc: Scene; t: number; frame: number; showZones
   const v = Math.hypot(cam.c[0] - prev.c[0], cam.c[1] - prev.c[1]) * K * s + Math.abs(cam.s - prev.s) * 1400;
   const blur = Math.min(5, Math.max(0, (v - 8) * 0.06));
   const step = Math.floor(frame / 2);
-  const cjx = (random('cx' + step) - 0.5) * 1.6, cjy = (random('cy' + step) - 0.5) * 1.6;
+  let shake = 0;
+  for (const sh of sc.shakes ?? []) { const u = t - sh.t; if (u >= 0 && u < 0.6) shake += sh.amt * Math.exp(-7 * u); }
+  const cjx = (random('cx' + step) - 0.5) * (1.6 + 30 * shake), cjy = (random('cy' + step) - 0.5) * (1.6 + 30 * shake);
   // keep the frame covered: clamp the focus so the scaled plate never shows an edge
   const minX = (PW / 2) / s, minY = (PH / 2) / s;
   const fx = Math.min(PW - minX, Math.max(minX, cam.c[0])), fy = Math.min(PH - minY, Math.max(minY, cam.c[1]));
@@ -252,7 +265,7 @@ export const SceneView: React.FC<{sc: Scene; t: number; frame: number; showZones
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: '#EFE6D4'}}>
       <div style={{position: 'absolute', left: 0, top: 0, width: PW, height: PH, transformOrigin: '0 0',
-        transform: `translate(${tx}px,${ty}px) scale(${K * s})`, filter: blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : undefined}}>
+        transform: `translate(${tx}px,${ty}px) scale(${K * s}) rotate(${(random('cr' + step) - 0.5) * 1.2 * shake}deg)`, filter: blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : undefined}}>
         <Img src={staticFile(baseSrc)} style={{position: 'absolute', left: 0, top: 0, width: PW, height: PH}} />
         {sc.pieces.map((p) => <PieceLayer key={p.id} src={pieceSrc} piece={p} t={ts} frame={frame} />)}
         {sc.glows.filter((g) => !g.front).map((g) => <GlowLayer key={g.id} g={g} t={ts} frame={frame} />)}
@@ -272,6 +285,11 @@ export const SceneView: React.FC<{sc: Scene; t: number; frame: number; showZones
           );
         })}
       </div>
+      {(sc.flashes ?? []).map((f, i) => {
+        const u = t - f.t, d = f.dur ?? 0.25;
+        if (u < 0 || u > d) return null;
+        return <AbsoluteFill key={'fl' + i} style={{backgroundColor: f.color ?? '#FFFDF5', opacity: (f.amt ?? 0.7) * (1 - u / d) ** 2, mixBlendMode: 'screen'}} />;
+      })}
     </AbsoluteFill>
   );
 };

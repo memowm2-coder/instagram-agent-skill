@@ -3,9 +3,20 @@
 Animates the **8 approved storyboard PNGs as master keyframes**. No artwork is generated or redrawn:
 every moving layer is cut from the approved plate's own pixels, and Maryam is the mask cut from the same image.
 
-**Status:** the 10 s preview (`ghareeb_ajeeb_scrubs_preview.mp4`, scenes 01–02 + the rip into 03) is waiting for
-approval of the movement. Scenes 03–08 have their timing, camera and safe zones in the config (`status: 'base-only'`);
-they get their full animation pass, and `ghareeb_ajeeb_scrubs_full.mp4` gets rendered, only after the preview is approved.
+**Status:** all 8 scenes animated. `ghareeb_ajeeb_scrubs_full.mp4` is the full episode (57 s, 1920×1080, 30 fps) and
+`ghareeb_ajeeb_scrubs_preview.mp4` is the approved 10 s preview. No voice-over yet: the timeline is built scene by scene in
+`src/scenes.ts`, so it can be retimed to the VO later.
+
+| Scene | Time | Choreography | Exit |
+| --- | --- | --- | --- |
+| 01 | 0:00–0:05 | board assembles in stop motion, Maryam slides in with the green scrub, whips white → green → blue, chalk circles | file opens (RTL) |
+| 02 | 0:05–0:10 | archival photos dealt onto the board and develop, Maryam pops up, camera travels photo to photo | paper rip |
+| 03 | 0:10–0:16 | operating-lamp glare and flashes, Maryam shields her eyes, chalk on the lamp and her eyes, lamp blueprint lifts | stop-motion jump |
+| 04 | 0:16–0:23 | afterimage: stare at the red half of the eye (red pulse + red circle) → gaze line → silhouette glows green | diagram wipe |
+| 05 | 0:23–0:30 | swatches pinned, colour wheel spins in, comparison card rises into her hands, arrows traced, green / blue circled | slide |
+| 06 | 0:30–0:38 | strain: glaring white scrub, pulsing red arrows, shaking eye; comfort: green/blue scrubs and calm eye build in, Maryam leans side to side | pin snaps |
+| 07 | 0:38–0:47 | evidence photos pinned, red strings light up, red circle on the white scrub, Maryam slams the stamp (shake + flash), red ring on the file | archival reveal |
+| 08 | 0:47–0:57 | white → green → blue line up with traced arrows and chalk circles, then the board clears and Maryam slides out → loops into 01 | — |
 
 ## Rerender
 ```bash
@@ -57,7 +68,10 @@ New moves: `enter` (drop / slide in with an overshoot landing and a paper thump)
 camera speed, and Maryam `enter` / `present` / `lean` / `nod` pinned at her base like a paper puppet.
 
 ## How layers are separated (masks)
-- **Maryam**: `rembg` (isnet-general-use) on the plate, cropped to the presenter's side. The largest connected component
+- **Maryam**: `rembg` (isnet-general-use) on the plate, cropped to the presenter's side (05 and 06 were re-segmented and
+  merged, because the first pass missed her right arm and the hijab tail). `tools/prepare_layers.py` then removes artwork rembg
+  pulled in: the instrument tray (03), the eye card (04), the two eye circles and the eye diagram (06), and the evidence board
+  and folders (07, body + stamp arm only). It keeps every part ≥ 12k px and fills enclosed holes with the plate's own pixels. The largest connected component
   is kept, and holes smaller than 2,500 px are filled with the plate's own pixels. Scene 01's cutout includes the green
   scrub she holds, so the green scrub moves with her. Her hand on the white scrub was not separated, so it moves with
   the white-scrub piece.
