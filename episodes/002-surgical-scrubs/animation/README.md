@@ -3,7 +3,7 @@
 Animates the **8 approved storyboard PNGs as master keyframes**. No artwork is generated or redrawn:
 every moving layer is cut from the approved plate's own pixels, and Maryam is the mask cut from the same image.
 
-**Status:** all 8 scenes animated. `ghareeb_ajeeb_scrubs_full.mp4` is the full episode (57 s, 1920×1080, 30 fps) and
+**Status:** all 8 scenes animated. `ghareeb_ajeeb_scrubs_full.mp4` is the full episode (57 s, 1920×1080, 30 fps; the Remotion render re-encoded at H.264 CRF 21 to stay under GitHub's 100 MB limit) and
 `ghareeb_ajeeb_scrubs_preview.mp4` is the approved 10 s preview. No voice-over yet: the timeline is built scene by scene in
 `src/scenes.ts`, so it can be retimed to the VO later.
 
