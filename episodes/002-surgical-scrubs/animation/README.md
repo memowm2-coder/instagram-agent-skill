@@ -12,6 +12,7 @@ they get their full animation pass, and `ghareeb_ajeeb_scrubs_full.mp4` gets ren
 npm install                 # Remotion 4.0.242
 npm run prepare-layers      # copies storyboard/ + layers/ into public/, writes src/layers.json
 npm run sfx                 # synthesises the sound-design stems into public/sfx/
+npm run clean-plates        # builds NN_board / NN_clean plates (needs opencv-python-headless)
 npm run preview             # → out/ghareeb_ajeeb_scrubs_preview.mp4 (300 frames)
 npm run full                # → out/ghareeb_ajeeb_scrubs_full.mp4  (1710 frames, after approval)
 npm run safezones           # → out/safezones.png, the text-safe zones on all 8 plates
@@ -42,6 +43,19 @@ npm run studio              # live preview / scrubbing
 
 All plates are 1672×941 and are drawn at ×1.1483 to fill 1920×1080. Config coordinates are plate pixels.
 
+## v2 — more animation: clean boards
+`npm run clean-plates` (`tools/clean_plates.py`) builds two extra plates for every scene that uses `base(k, true)`:
+- `NN_board.png`: the approved plate with Maryam lifted out.
+- `NN_clean.png`: the board with every animated piece lifted out too.
+
+The gaps are filled with blank paper mirror-tiled from the plate's own empty paper area, like the bare collage board
+before things are pasted on. Pieces are cut from the board, so they can drop in, fly, flick and lift freely. Maryam can
+slide in, lean and present. At rest every layer sits exactly where it is in the approved image.
+
+New moves: `enter` (drop / slide in with an overshoot landing and a paper thump), `exit`, a bigger `lift`, `wobble`
+(idle flutter), hand-drawn chalk `marks` (circle / underline, drawn on), camera `whip` keys with motion blur scaled to
+camera speed, and Maryam `enter` / `present` / `lean` / `nod` pinned at her base like a paper puppet.
+
 ## How layers are separated (masks)
 - **Maryam**: `rembg` (isnet-general-use) on the plate, cropped to the presenter's side. The largest connected component
   is kept, and holes smaller than 2,500 px are filled with the plate's own pixels. Scene 01's cutout includes the green
@@ -50,8 +64,8 @@ All plates are 1672×941 and are drawn at ×1.1483 to fill 1920×1080. Config co
 - **Pieces** (photos, swatches, chips, clips, eye diagram): hand-placed polygons in `scenes.ts`, rendered as
   `clip-path` copies of the same plate. Each piece only ever scales **≥ 1** about its own centre (with ≤1° rotation), so it
   always covers its original pixels and no double edge appears.
-- **Maryam motion budget**: scale ≤ ~1.2 % about her torso, rotation ≤ 0.35°, 1 px on-twos jitter. Her extremities move
-  ≤ ~6 px, which stays inside her white sticker border, so the plate's copy of her never shows.
+- **Maryam motion** (v2): scenes with clean boards move her freely (slide-in, lean, present). Scenes still on the
+  original plate keep her within ~6 px so the plate's copy of her never shows.
 - **No text is baked in.** `textSafe` zones are in the config. `texts: []` takes optional editable Arabic layers
   (IBM Plex Sans Arabic Bold), set in code.
 

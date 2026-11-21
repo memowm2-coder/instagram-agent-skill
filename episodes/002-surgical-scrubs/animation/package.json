@@ -7,7 +7,8 @@
     "studio": "remotion studio src/index.ts",
     "preview": "remotion render src/index.ts ScrubsPreview out/ghareeb_ajeeb_scrubs_preview.mp4 --codec=h264 --crf=18 --audio-codec=aac",
     "full": "remotion render src/index.ts ScrubsFull out/ghareeb_ajeeb_scrubs_full.mp4 --codec=h264 --crf=18 --audio-codec=aac",
-    "safezones": "remotion still src/index.ts SafeZones out/safezones.png"
+    "safezones": "remotion still src/index.ts SafeZones out/safezones.png",
+    "clean-plates": "python3 tools/clean_plates.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.242",
